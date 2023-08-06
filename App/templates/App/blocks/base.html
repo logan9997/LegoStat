@@ -30,25 +30,25 @@
 			<div class="collapse navbar-collapse" id="navbarColor01">
 				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 					<li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="#">Home</a>
+						<a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Trending</a>
+						<a class="nav-link" href="{% url 'trending' %}">Trending</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Browse</a>
+						<a class="nav-link" href="{% url 'browse' %}">Browse</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Buy</a>
+						<a class="nav-link" href="{% url 'buy' %}">Buy</a>
 					</li>
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 							Profile
 						</a>
 						<ul class="dropdown-menu">
-							<li><a class="dropdown-item" href="#">Portfolio</a></li>
-							<li><a class="dropdown-item" href="#">Watchlist</a></li>
-							<li><a class="dropdown-item" href="#">Settings</a></li>
+							<li><a class="dropdown-item" href="{% url 'portfolio' %}">Portfolio</a></li>
+							<li><a class="dropdown-item" href="{% url 'watchlist' %}">Watchlist</a></li>
+							<li><a class="dropdown-item" href="{% url 'settings' %}">Settings</a></li>
 						</ul>
 					</li>
 				</ul>
