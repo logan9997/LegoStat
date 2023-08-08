@@ -1,0 +1,7 @@
+{% load static %}
+
+<div class="border-black border rounded-1 p-1" style="width: 10rem;">
+    <a class="mb-3 text-center d-block" href="{% url 'item' item_info.item_id %}">{{item_info.item_id}}</a>
+    <img  class="d-block m-auto" src="{% static 'App/minifigures/' %}{{item_info.item_id}}.png">
+    <span class="mt-3 text-wrap text-center d-block border-top border-black">{{item_info.item_name}}</span>
+</div>
