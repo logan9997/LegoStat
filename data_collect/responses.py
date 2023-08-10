@@ -17,5 +17,8 @@ class Response():
 
     def get_response(self, sub_url):
         response = self.auth.get(self.base_url + sub_url)
-        return json.loads(response.text).get('data', response.text)
-    
+        json_data = json.loads(response.text)
+
+        if json_data['meta']['code'] != 200:
+            raise Exception(str(json_data))
+        return json_data['data']
