@@ -2,6 +2,8 @@ import psycopg2
 from environment_manager import Manager
 from datetime import datetime as dt
 from config import Date
+from utils import item_type_convert
+from psycopg2.errors import UniqueViolation
 
 class DB:
 
@@ -21,12 +23,15 @@ class DB:
             '{data['no']}',
             '{data['name']}',
             {data['year_released']},
-            'M',
+            '{item_type_convert(data['type'])}',
             0
         )
         '''
-        self.cursor.execute(sql)
-        self.con.commit()
+        try:
+            self.cursor.execute(sql)
+            self.con.commit()
+        except UniqueViolation:
+            self.con.close()
 
     def insert_price_info(self, data:dict):
         self.clean_data(data)
@@ -34,7 +39,7 @@ class DB:
         INSERT INTO "App_price"(date, condition, avg_price, total_quantity, item_id) VALUES (
             '{dt.today().strftime(Date.DATE_FORMAT)}',
             '{data['new_or_used']}',
-            {data['avg_price']},
+            {round(data['avg_price'], 2)},
             '{data['total_quantity']}',
             '{data['item']['no']}'
         )
@@ -50,3 +55,13 @@ class DB:
         self.cursor.execute(sql)
         result = self.cursor.fetchall()
         return [row[0] for row in result]
+    
+    def get_item_type(self, item_id):
+        sql = f'''
+        SELECT item_type
+        FROM "App_item"
+        WHERE item_id = '{item_id}'
+        '''
+        self.cursor.execute(sql)
+        result = self.cursor.fetchall()
+        return result[0][0]
