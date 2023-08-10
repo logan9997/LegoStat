@@ -1,14 +1,13 @@
 from django.shortcuts import render
 from ..models import Item, Price
-from config import Date
-from datetime import datetime as dt
+from django.db.models import Max
 
 def item(request, item_id:str):
 
-    price_table_filters = {'item_id':item_id, 'date':dt.today().strftime(Date.DATE_FORMAT)}
+    max_date = Price.objects.filter(item_id=item_id).aggregate(max_date=Max('date')).get('max_date')
+    price_table_filters = {'item_id':item_id, 'date':max_date}
 
-    item_info = Item.objects.filter(item_id=item_id, price__date=dt.today(
-        ).strftime(Date.DATE_FORMAT)).values(
+    item_info = Item.objects.filter(item_id=item_id, price__date=max_date).values(
             'item_id', 'item_name', 'year_released', 'item_type', 'views',
             'price__date', 'price__avg_price', 'price__total_quantity',
             'price__condition'
