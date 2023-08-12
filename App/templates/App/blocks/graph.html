@@ -1,0 +1,45 @@
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+{{ item_info.item_id|json_script:"item-id" }}
+
+{{ item_info.graph_prices_new|json_script:"graph-prices-new" }}
+{{ item_info.graph_prices_used|json_script:"graph-prices-used" }}
+
+{{ item_info.graph_quantities_new|json_script:"graph-quantities-new" }}
+{{ item_info.graph_quantities_used|json_script:"graph-quantities-used" }}
+
+{{ item_info.graph_dates|json_script:"graph-dates" }}
+
+
+<canvas id="graph_{{item_info.item_id}}" style="max-width: 60rem; max-height: 22rem;"></canvas>
+
+<script>
+    const item_id = JSON.parse(document.getElementById('item-id').textContent)
+    const canvas = document.getElementById(`graph_${item_id}`)
+
+    let prices_new = JSON.parse(document.getElementById('graph-prices-new').textContent)
+    let prices_used = JSON.parse(document.getElementById('graph-prices-used').textContent)
+
+    let quantities_new = JSON.parse(document.getElementById('graph-quantities-new').textContent)
+    let quantities_used = JSON.parse(document.getElementById('graph-quantities-used').textContent)
+
+    let dates = JSON.parse(document.getElementById('graph-dates').textContent)
+
+    console.log(dates)
+    new Chart(canvas, {
+        type: 'line',
+        data: {
+            labels: dates,
+            datasets: [
+                {
+                    label:'Average Price',
+                    data: prices_new,
+                },
+                {
+                    label: 'Total Quantity',
+                    data: quantities_new,
+                },
+            ]
+        }
+    })
+</script>
