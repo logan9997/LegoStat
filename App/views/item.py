@@ -22,6 +22,14 @@ def item(request, item_id:str):
             ).values_list('total_quantity', flat=True),
     )[0]
 
+    item_info['graph_prices_new'] = list(Price.objects.filter(item_id=item_id, condition='N').values_list('avg_price', flat=True))
+    item_info['graph_prices_used'] = list(Price.objects.filter(item_id=item_id, condition='U').values_list('avg_price', flat=True))
+
+    item_info['graph_quantities_new'] = list(Price.objects.filter(item_id=item_id, condition='N').values_list('total_quantity', flat=True))
+    item_info['graph_quantities_used'] = list(Price.objects.filter(item_id=item_id, condition='U').values_list('total_quantity', flat=True))
+
+    item_info['graph_dates'] = list(Price.objects.filter(item_id=item_id, condition='N').values_list('date', flat=True))
+
     context = {
         'item_info':item_info
     }
