@@ -1,0 +1,21 @@
+.text-max-two-lines {
+    display: block;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    overflow: hidden;
+    max-height: 3em;
+    line-height: 1.5em;
+}
+
+.search-suggestion:nth-child(even) {
+    background-color: gainsboro;
+}
+
+.search-suggestion:nth-child(odd) {
+    background-color: whitesmoke;
+}
+
+.info-block {
+    width: 31%;
+    background-color: red;
+}
