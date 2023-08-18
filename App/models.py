@@ -1,5 +1,6 @@
 from django.db import models
-from .config import ModelValidations as MV
+from config import ModelValidations as MV
+from utils import clean_html_codes
 
 class User(models.Model):
     user_id = models.AutoField(primary_key=True)
