@@ -32,7 +32,7 @@ function create_new_search_suggestion(id, name) {
         <img src="" alt="" style="width: 4rem; height: 4rem; margin: 0.3rem 0.5rem">
         <div style="display: flex; flex-direction: column; width:10rem; padding: 0 0.7rem 0;">
             <span class="text-max-two-lines">${name}</span>
-            <a href="" class="bottom-0 position-absolute mb-1">${id}</a>
+            <a href="${window.location.origin}/item/${id}" class="bottom-0 position-absolute mb-1">${id}</a>
         </div>
     </div>
     `
@@ -42,4 +42,31 @@ function create_new_search_suggestion(id, name) {
 function clear_search_suggestions() {
     let suggestions_container = document.getElementById('search-suggestions')
     suggestions_container.innerHTML = ''
+}
+
+function update_graph(metric_label) {
+    for (let i = 0; i < graph.data.datasets.length; i ++) {
+        if (graph.data.datasets[i].label == metric_label) {
+            if (graph.data.datasets[i].hidden == false) {
+                graph.data.datasets[i].hidden = true
+            } else {
+                graph.data.datasets[i].hidden = false
+            }
+        }
+    }
+    graph.update()
+}
+
+function check_checkboxes(checkboxes) {
+    for (let i = 0; i < checkboxes.length; i ++) {
+        checkboxes[i].checked = true
+    }
+}
+
+function change_graph_layout(number) {
+    if (number == 'four') {
+        for (let i = 0; i < 4; i ++) {
+            new Chart()
+        }
+    }
 }
