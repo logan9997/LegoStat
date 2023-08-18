@@ -3,36 +3,72 @@
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 
 {% block content %}
-<div id="top-level-container" class="d-flex mt-5">
+<section id="top-level-section" class="d-flex mt-5">
     <div id="item-profile-container" class="mx-5">
         {% include 'App/blocks/item_profile.html' with item_info=item_info %}
     </div>
 
-    <div id="item-info-container">
-        <div class="prices-container">
-            <table class="table w-25 table-bordered">
-                <thead>
-                    <tr>
-                        <th scope="col"></th>
-                        <th scope="col">New</th>
-                        <th scope="col">Used</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">Average Price</th>
-                        <td>{{item_info.price_new}}</td>
-                        <td>{{item_info.price_used}}</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Total Quantity</th>
-                        <td>{{item_info.quantity_new}}</td>
-                        <td>{{item_info.quantity_used}}</td>
-                    </tr>
-                </tbody>
-            </table>
+    <div id="item-info-container" class="border-black border rounded-1 p-1 py-3 w-100 d-flex justify-content-around">
+        <div id="prices-and-quantities" class="d-flex flex-column text-center" style="width: 33%;">
+            <h4>Price & Quantity</h4>
+            <span>Price (New) : {{item_info.price_new}}</span>
+            <span>Price (Used) : {{item_info.price_used}}</span>
+            <span>Quantity (New) : {{item_info.quantity_new}}</span>
+            <span>Quantity (Used) : {{item_info.quantity_used}}</span>
+        </div>
+
+        <div id="info" class="border-end border-start border-black d-flex flex-column text-center" style="width: 32%;">
+            <h4 class="text-center">Info</h4>
+            <span>Theme : Star Wars</span>
+            <span>Sub Theme : Episode III</span>
+            <span>Year released : {{item_info.year_released}}</span>
+            <span>Appears in 2 {{item_info.sets_appeared_in}} sets</span>
+        </div>
+
+        <div id="collections" class="d-flex flex-column text-center" style="width: 33%;">
+            <h4 class="text-center">Collections</h4>
+            <span>In Watchlist : {{item_info.in_watchlist}}</span>
+            <span>In Portfolio : {{item_info.portfolio_quantity}}</span>
+            <span>Portfolio Value : £{{item_info.portfolio_value}}</span>
         </div>
     </div>
-</div>
+</section>
+
+<section id="graph-section" class="mx-auto d-flex w-75 mt-5">
+    <div id="graph-container" class="w-75">
+        {% include 'App/blocks/graph.html' with item_info=item_info %}
+    </div>
+
+    <div id="graph-options">
+        <div id="graph-checkboxes" class="ms-4">
+            {% for graph_metric in graph_metrics %}
+            <div>
+                <input class="graph-metric-checkbox" oninput="update_graph(`{{graph_metric.label}}`)" 
+                type="checkbox" name="graph-metric" value="{{graph_metric.value}}" checked>
+                <label for="{{graph_metric.value}}">{{graph_metric.label}}</label>
+            </div>
+            {% endfor %}
+        </div>
+
+        <div id="graph-layout-option">
+            <label for="one">One</label>
+            <input type="radio" name="graph-layout" value="one" oninput="change_graph_layout('one')">
+            <label for="two">Two</label>
+            <input type="radio" name="graph-layout" value="two" oninput="change_graph_layout('two')">
+            <label for="four">Four</label>
+            <input type="radio" name="graph-layout" value="four" oninput="change_graph_layout('four')">
+        </div>
+
+    </div>
+</section>
 {% endblock %}
 
+{% block script %}
+
+<script>
+    window.onload = check_checkboxes(
+        document.getElementsByClassName('graph-metric-checkbox')
+    )
+</script>
+
+{% endblock %}
