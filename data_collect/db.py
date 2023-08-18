@@ -39,7 +39,7 @@ class DB:
         INSERT INTO "App_price"(date, condition, avg_price, total_quantity, item_id) VALUES (
             '{dt.today().strftime(Date.DATE_FORMAT)}',
             '{data['new_or_used']}',
-            {round(data['avg_price'], 2)},
+            {round(float(data['avg_price']), 2)},
             '{data['total_quantity']}',
             '{data['item']['no']}'
         )
