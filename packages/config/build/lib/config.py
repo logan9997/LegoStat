@@ -17,4 +17,19 @@ class ModelValidations:
 
 class Date:
 
-    DATE_FORMAT = '%Y/%m/%d'
+    DATE_FORMAT = '%Y-%m-%d'
+
+
+class Forms:
+    pass
+
+
+class Options:
+    
+    GRAPH_METRICS = [
+        {'value':'graph_prices_new', 'label':'Average Price (New) (£)', 'colour':'red'},
+        {'value':'graph_prices_used', 'label':'Average Price (Used) (£)', 'colour':'blue'},
+        {'value':'graph_quantities_new', 'label':'Total Quantity (New)', 'colour':'green'},
+        {'value':'graph_quantities_used', 'label':'Total Quantity (Used)', 'colour':'yellow '},
+    ]
+
