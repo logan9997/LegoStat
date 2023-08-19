@@ -13,3 +13,8 @@ def get_all_item_names():
     names = list(Item.objects.all().values_list('item_name', flat=True))
     names = list(map(clean_html_codes, names))
     return names
+
+
+@register.filter
+def get(_dict, key):
+    return _dict.get(key)
