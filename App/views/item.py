@@ -4,6 +4,7 @@ from django.db.models import Max, Exists, Count, Subquery, OuterRef, Value, Case
 from django.core.handlers.wsgi import WSGIRequest
 from django.db.models.functions import Coalesce
 from config import Options
+from utils import get_similar_items
 
 
 def item(request:WSGIRequest, item_id:str):
@@ -29,9 +30,11 @@ def item(request:WSGIRequest, item_id:str):
         in_watchlist=Exists(Watchlist.objects.filter(
             user_id=user_id,item_id=item_id)),
         portfolio_quantity=Coalesce(
-            Subquery(Portfolio.objects.filter(
-                user_id=user_id, item_id=OuterRef('item_id')
-            ).values(c=Count('item_id'))[:1]),
+            Subquery(
+                Portfolio.objects.filter(
+                    user_id=user_id, item_id=OuterRef('item_id')
+                ).values(c=Count('item_id'))[:1]
+            ),
             Value(0)
         ),
         portfolio_value=F('portfolio_quantity') * (
@@ -44,8 +47,8 @@ def item(request:WSGIRequest, item_id:str):
                 When(price__condition='U', then=F('price_used')),
                 default=Value(0),
                 output_field=FloatField()
-    )
-)
+            )
+        )
     )[0]
 
     item_info['graph_prices_new'] = list(Price.objects.filter(item_id=item_id, condition='N').values_list('avg_price', flat=True))
@@ -56,9 +59,18 @@ def item(request:WSGIRequest, item_id:str):
 
     item_info['graph_dates'] = list(Price.objects.filter(item_id=item_id, condition='N').values_list('date', flat=True))
 
+    similar_items = get_similar_items(
+        item_info['item_name'], item_info['item_type']
+    )
+    similar_items = Item.objects.filter(
+        item_id__in=similar_items
+    ).values('item_id', 'item_name')
+    
+
     context = {
         'item_info':item_info,
         'graph_metrics':Options.GRAPH_METRICS,
+        'similar_items':similar_items
     }
 
     return render(request, 'App/item.html', context=context)

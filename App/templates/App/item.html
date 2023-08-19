@@ -11,8 +11,8 @@
     <div id="item-info-container" class="border-black border rounded-1 p-1 py-3 w-100 d-flex justify-content-around">
         <div id="prices-and-quantities" class="d-flex flex-column text-center" style="width: 33%;">
             <h4>Price & Quantity</h4>
-            <span>Price (New) : {{item_info.price_new}}</span>
-            <span>Price (Used) : {{item_info.price_used}}</span>
+            <span>Price (New) : £{{item_info.price_new}}</span>
+            <span>Price (Used) : £{{item_info.price_used}}</span>
             <span>Quantity (New) : {{item_info.quantity_new}}</span>
             <span>Quantity (Used) : {{item_info.quantity_used}}</span>
         </div>
@@ -61,6 +61,18 @@
 
     </div>
 </section>
+
+<section id="similar-items-section" class="mt-5">
+    <h3 class="text-center">Similar Items</h3>
+    <div id="similar-items-flex-container" class="d-flex flex-wrap justify-content-between">
+    {% for similar_item in similar_items %}
+        <div class="similar-item-container my-2">
+        {% include 'App/blocks/item_profile.html' with item_info=similar_item %}
+        </div>
+    {% endfor %}
+    </div>
+</section>
+
 {% endblock %}
 
 {% block script %}
