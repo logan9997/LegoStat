@@ -19,3 +19,7 @@
     width: 31%;
     background-color: red;
 }
+
+::-webkit-scrollbar {
+    display: none;
+}
