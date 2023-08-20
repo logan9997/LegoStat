@@ -2,6 +2,8 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 
+{% load tags %}
+
 {% block content %}
 <section id="top-level-section" class="d-flex mt-5">
     <div id="item-profile-container" class="mx-5">
@@ -34,13 +36,14 @@
     </div>
 </section>
 
-<section id="graph-section" class="mx-auto d-flex w-75 mt-5">
+<section id="graph-section" class="mx-auto d-flex w-100 mt-5">
     <div id="graph-container" class="w-75">
         {% include 'App/blocks/graph.html' with item_info=item_info %}
     </div>
 
-    <div id="graph-options">
-        <div id="graph-checkboxes" class="ms-4">
+    <div id="graph-options" class="ms-4">
+        <div id="graph-checkboxes" class="">
+            <span>Metric Options</span>
             {% for graph_metric in graph_metrics %}
             <div>
                 <input class="graph-metric-checkbox" oninput="update_graph(`{{graph_metric.label}}`)" 
@@ -50,13 +53,33 @@
             {% endfor %}
         </div>
 
-        <div id="graph-layout-option">
-            <label for="one">One</label>
-            <input type="radio" name="graph-layout" value="one" oninput="change_graph_layout('one')">
-            <label for="two">Two</label>
-            <input type="radio" name="graph-layout" value="two" oninput="change_graph_layout('two')">
-            <label for="four">Four</label>
-            <input type="radio" name="graph-layout" value="four" oninput="change_graph_layout('four')">
+        <div id="graph-layout-option" class="mt-2">
+            <span>Graph Layout</span>
+            <div>
+                <div>
+                    <input type="radio" name="graph-layout" value="one" oninput="change_graph_layout('one')">
+                    <label for="one">One</label>
+                </div>
+                <div>
+                    <input type="radio" name="graph-layout" value="two" oninput="change_graph_layout('two')">
+                    <label for="two">Two</label>
+                </div>
+                <div>
+                    <input type="radio" name="graph-layout" value="four" oninput="change_graph_layout('four')">
+                    <label for="four">Four</label>
+                </div>
+            </div>
+        </div>
+
+        <div id="date-sliders">
+            <div>
+                <span>From </span><label id="start-date-range-text" for="start-date">{{dates|index:0|date:"Y-m-d"}}</label> 
+                <span>To </span><label id="end-date-range-text" for="end-date">{{dates|index:-1|date:"Y-m-d"}}</label>
+            </div>
+            <div>
+                <input type="range" name="start-date" id="start-date-slider" step="1" min="{{min_date}}" value="0" max="{{max_date|add:-2}}" oninput="update_graph_date(), check_slider_boundaries()">
+                <input type="range" name="end-date" id="end-date-slider" step="1" min="{{min_date|add:2}}" value="{{max_date}}" max="{{max_date}}" oninput="update_graph_date(), check_slider_boundaries()">
+            </div>
         </div>
 
     </div>

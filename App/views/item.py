@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from ..models import Item, Price, Watchlist, Portfolio
-from django.db.models import Max, Exists, Count, Subquery, OuterRef, Value, Case, F, FloatField, Sum, Value, When
+from django.db.models import Max, Exists, Count, Subquery, OuterRef, Value, Case, F, FloatField, Min, Value, When
 from django.core.handlers.wsgi import WSGIRequest
 from django.db.models.functions import Coalesce
 from config import Options
@@ -12,6 +12,7 @@ def item(request:WSGIRequest, item_id:str):
     user_id = request.session.get('user_id', -1)
 
     max_date = Price.objects.filter(item_id=item_id).aggregate(max_date=Max('date')).get('max_date')
+
     price_table_filters = {'item_id':item_id, 'date':max_date}
 
     item_info = Item.objects.filter(item_id=item_id, price__date=max_date).values(
@@ -51,13 +52,17 @@ def item(request:WSGIRequest, item_id:str):
         )
     )[0]
 
-    item_info['graph_prices_new'] = list(Price.objects.filter(item_id=item_id, condition='N').values_list('avg_price', flat=True))
-    item_info['graph_prices_used'] = list(Price.objects.filter(item_id=item_id, condition='U').values_list('avg_price', flat=True))
+    item_info['graph_prices_new'] = list(Price.objects.filter(item_id=item_id, condition='N').values_list('avg_price', flat=True).order_by('date'))
+    item_info['graph_prices_used'] = list(Price.objects.filter(item_id=item_id, condition='U').values_list('avg_price', flat=True).order_by('date'))
 
-    item_info['graph_quantities_new'] = list(Price.objects.filter(item_id=item_id, condition='N').values_list('total_quantity', flat=True))
-    item_info['graph_quantities_used'] = list(Price.objects.filter(item_id=item_id, condition='U').values_list('total_quantity', flat=True))
+    item_info['graph_quantities_new'] = list(Price.objects.filter(item_id=item_id, condition='N').values_list('total_quantity', flat=True).order_by('date'))
+    item_info['graph_quantities_used'] = list(Price.objects.filter(item_id=item_id, condition='U').values_list('total_quantity', flat=True).order_by('date'))
 
-    item_info['graph_dates'] = list(Price.objects.filter(item_id=item_id, condition='N').values_list('date', flat=True))
+    dates = list(Price.objects.filter(item_id=item_id
+        ).distinct('date').values_list('date', flat=True).order_by('date')
+    )
+
+    item_info['graph_dates'] = dates
 
     similar_items = get_similar_items(
         item_info['item_name'], item_info['item_type']
@@ -65,12 +70,14 @@ def item(request:WSGIRequest, item_id:str):
     similar_items = Item.objects.filter(
         item_id__in=similar_items
     ).values('item_id', 'item_name')
-    
-
+        
     context = {
         'item_info':item_info,
         'graph_metrics':Options.GRAPH_METRICS,
-        'similar_items':similar_items
+        'similar_items':similar_items,
+        'min_date':0,
+        'max_date':(Price.objects.filter(item_id=item_id).count() // 2),
+        'dates':dates
     }
 
     return render(request, 'App/item.html', context=context)
