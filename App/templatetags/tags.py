@@ -14,7 +14,14 @@ def get_all_item_names():
     names = list(map(clean_html_codes, names))
     return names
 
-
 @register.filter
 def get(_dict, key):
     return _dict.get(key)
+
+@register.filter
+def add(num1, num2):
+    return num1 + num2
+
+@register.filter
+def index(iterable, index:int):
+    return iterable[index]
