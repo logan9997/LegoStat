@@ -99,3 +99,34 @@ function update_graph_date() {
     end_date_range_text.innerHTML = dates[end_value-1]
 }
 
+function update_focus_item(item) {
+    var new_id = item.getElementsByClassName('item-id')[0].innerHTML    
+    var new_name = item.getElementsByClassName('item-name')[0].innerHTML
+
+    var focus_item_container = document.getElementById('focus-item')
+    focus_item_container.getElementsByClassName('item-id')[0].innerHTML = new_id
+    focus_item_container.getElementsByClassName('item-name')[0].innerHTML = new_name
+    focus_item_container.getElementsByClassName('item-image')[0].src = `/static/App/items/${new_id}.png`
+
+    var item_index = parseInt(
+        item.getElementsByClassName('trending-item-index')[0].innerHTML
+    )
+
+    document.getElementById('avg-price-new').innerHTML = `
+        Average Price (New) : £${trending_items[item_index].avg_price_new}
+    `
+    document.getElementById('avg-price-used').innerHTML = `
+        Average Price (Used) : £${trending_items[item_index].avg_price_used}
+    `
+    document.getElementById('total-quantity-new').innerHTML = `
+        Total Quantity (New) :  ${trending_items[item_index].total_quantity_new}
+    `
+    document.getElementById('total-quantity-used').innerHTML = `
+        Total Quantity (Used) : ${trending_items[item_index].total_quantity_used}
+    `
+
+    var metric = JSON.parse(document.getElementById('graph-metrics').textContent)[0]   
+    graph.data.datasets[0].data = trending_items[item_index][`graph_${metric}`]
+    graph.data.labels = trending_items[item_index].graph_dates
+    graph.update()
+}
