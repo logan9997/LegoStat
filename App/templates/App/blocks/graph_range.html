@@ -1,0 +1,8 @@
+<form action="{% url 'graph_range' redirect_view %}" method="post">
+    {% csrf_token %}
+    <button type="submit" value="7" name="graph_range">1W</button>
+    <button type="submit" value="30" name="graph_range">1M</button>
+    <button type="submit" value="90" name="graph_range">3M</button>
+    <button type="submit" value="365" name="graph_range">1Y</button>
+    <button type="submit" value="99999" name="graph_range">MAX</button>
+</form>
