@@ -1,0 +1,12 @@
+<form action="{% url 'pages' redirect_view %}" method="post" class="w-100 d-flex justify-content-evenly">
+    {% csrf_token %}
+    {% for page in pages %}
+    <button type="submit" name="selected_page" value="{{page}}" class="mx-1 btn
+     {% if page == current_page %}
+        bg-success
+    {% else %}
+        btn-outline-primary
+    {% endif %}
+     ">{{page}}</button>
+    {% endfor %}
+</form>
