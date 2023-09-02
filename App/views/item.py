@@ -4,7 +4,7 @@ from django.db.models import Max, Exists, Count, Subquery, OuterRef, Value, Case
 from django.core.handlers.wsgi import WSGIRequest
 from django.db.models.functions import Coalesce
 from config import Options
-from utils import get_similar_items, get_graph_data, get_ordered_item_dates
+from utils import get_similar_items, GraphData
 
 
 def item(request:WSGIRequest, item_id:str):
@@ -51,9 +51,10 @@ def item(request:WSGIRequest, item_id:str):
             )
         )
     )[0]
-    item_info.update(get_graph_data(Price, item_id))
+    graph_data = GraphData(Price, item_id)
+    item_info.update(graph_data.get_metrics())
 
-    dates = get_ordered_item_dates(Price, item_id)
+    dates = graph_data.get_dates()
     item_info['graph_dates'] = dates
 
     similar_items = get_similar_items(
