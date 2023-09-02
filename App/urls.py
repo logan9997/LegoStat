@@ -5,7 +5,8 @@ from .views import (
 )
 from .views.redirects import (
     add_to_watchlist, logout, pages,
-    item_type_filter, metric_filter, winners_losers_filter
+    item_type_filter, metric_filter, winners_losers_filter,
+    graph_range
 )
 
 urlpatterns = [
@@ -22,6 +23,7 @@ urlpatterns = [
     path('item_type_filter/<str:redirect_view>/', item_type_filter.item_type_filter, name='item_type_filter'),
     path('metric_filter/<str:redirect_view>/', metric_filter.metric_filter, name='metric_filter'),
     path('winners_losers_filter/<str:redirect_view>/', winners_losers_filter.winners_losers_filter, name='winners_losers_filter'),
+    path('graph_range', graph_range.graph_range, name='graph_range'),
     path('login/', login.login, name='login'),
     path('sign_up/', sign_up.sign_up, name='sign_up'),
     path('logout/', logout.logout, name='logout')
