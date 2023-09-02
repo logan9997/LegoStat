@@ -1,0 +1,85 @@
+<style>
+    label {
+        width: 10rem;
+    }
+
+    .filter-heading {
+        text-align: center;
+        font-size: 1.2rem;
+        font-style: italic;
+    }
+</style>
+
+<section id="filter-forms-container" class="d-flex justify-content-evenly mt-3">
+    <form class="d-flex flex-column" action="{% url 'item_type_filter' redirect_view %}" method="post">
+        {% csrf_token %}
+        <span class="filter-heading">Item Type</span>
+        <div>
+            <label for="ALL">All</label>
+            <input {% if request.session.item_type_filter == 'ALL' %} checked {% endif %} oninput="this.form.submit()"
+            type="radio" name="item-type_filter" value="ALL">
+        </div>
+
+        <div>
+            <label for="M">Minifigures</label>
+            <input {% if request.session.item_type_filter == 'M' %} checked {% endif %} 
+            oninput="this.form.submit()" type="radio" name="item-type_filter" value="M">
+        </div>
+
+        <div>
+            <label for="S">Sets</label>
+            <input {% if request.session.item_type_filter == 'S' %} checked {% endif %} 
+            oninput="this.form.submit()" type="radio" name="item-type_filter" value="S">
+        </div>
+    </form>
+
+    <form class="d-flex flex-column border-end border-start px-4" action="{% url 'metric_filter' redirect_view %}" method="post">
+        {% csrf_token %}
+        <span class="filter-heading">Trending Metric</span>
+        <div>
+            <label for="avg_price__N">Average Price (New)</label>
+            <input {% if request.session.metric_filter == 'avg_price__N' %} checked {% endif %}
+            oninput="this.form.submit()" type="radio" name="metric_filter" value="avg_price__N">
+        </div>
+
+        <div>
+            <label for="avg_price__U">Average Price (Used)</label>
+            <input {% if request.session.metric_filter == 'avg_price__U' %} checked {% endif %}
+            oninput="this.form.submit()" type="radio" name="metric_filter" value="avg_price__U">
+        </div>
+
+        <div>
+            <label for="total_quantity__N">Total Quantity (New)</label>
+            <input {% if request.session.metric_filter == 'total_quantity__N' %} checked {% endif %} oninput="this.form.submit()"
+            type="radio" name="metric_filter" value="total_quantity__N">
+        </div>
+
+        <div>
+            <label for="total_quantity__U">Total Quantity (Used)</label>
+            <input {% if request.session.metric_filter == 'total_quantity__U' %} checked {% endif %} oninput="this.form.submit()"
+            type="radio" name="metric_filter" value="total_quantity__U">
+        </div>
+    </form>
+
+    <form class="d-flex flex-column"  action="{% url 'winners_losers_filter' redirect_view %}" method="post">
+        {% csrf_token %}
+        <span class="filter-heading">Winners / Losers</span>
+        <div>
+            <label for="ALL">All</label>
+            <input {% if request.session.winners_losers_filter == 'ALL' %} checked {% endif %} oninput="this.form.submit()"
+                type="radio" name="winners_losers_filter" value="ALL">
+        </div>
+
+        <div>
+            <label for="winners">Winners</label>
+            <input {% if request.session.winners_losers_filter == 'winners' %} checked {% endif %}
+            oninput="this.form.submit()" type="radio" name="winners_losers_filter" value="winners">
+        </div>
+
+        <div>
+            <label for="losers">Losers</label>
+            <input {% if request.session.winners_losers_filter == 'losers' %} checked {% endif %}
+            oninput="this.form.submit()" type="radio" name="winners_losers_filter" value="losers">
+        </div>
+    </form>
+</section>
