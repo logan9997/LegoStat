@@ -46,7 +46,7 @@
             <span>Metric Options</span>
             {% for graph_metric in graph_metrics %}
             <div>
-                <input class="graph-metric-checkbox" oninput="update_graph(`{{graph_metric.label}}`)" 
+                <input class="graph-metric-checkbox" style="accent-color: {{graph_metric.colour}};" oninput="update_graph(`{{graph_metric.label}}`)" 
                 type="checkbox" name="graph-metric" value="{{graph_metric.value}}" checked>
                 <label for="{{graph_metric.value}}">{{graph_metric.label}}</label>
             </div>
@@ -73,8 +73,10 @@
 
         <div id="date-sliders">
             <div>
-                <span>From </span><label id="start-date-range-text" for="start-date">{{dates|index:0|date:"Y-m-d"}}</label> 
-                <span>To </span><label id="end-date-range-text" for="end-date">{{dates|index:-1|date:"Y-m-d"}}</label>
+                <span>From</span>
+                <label id="start-date-range-text" for="start-date">{{dates|index:0|date:"Y-m-d"}}</label> 
+                <span>To </span>
+                <label id="end-date-range-text" for="end-date">{{dates|index:-1|date:"Y-m-d"}}</label>
             </div>
             <div>
                 <input type="range" name="start-date" id="start-date-slider" step="1" min="{{min_date}}" value="0" max="{{max_date|add:-2}}" oninput="update_graph_date(), check_slider_boundaries()">
@@ -83,8 +85,21 @@
         </div>
 
     </div>
+    
+    {% if request.session.user_id != None and request.session.user_id != -1 %}
+    <div id="add-to-collections">
+        <form action="{% url 'add_to_watchlist' item_info.item_id %}" method="post">
+            {% csrf_token %}
+            <div class="d-flex">
+                <label for="update-watchlist"></label>
+                <button name="update-watchlist" class="" type="submit">Add to Watchlist</button>
+            </div>
+        </form>
+    </div>
+    {% endif %}
 </section>
 
+{% if similar_items|length != 0 %}
 <section id="similar-items-section" class="mt-5">
     <h3 class="text-center">Similar Items</h3>
     <div id="similar-items-flex-container" class="d-flex flex-wrap justify-content-between">
@@ -95,6 +110,7 @@
     {% endfor %}
     </div>
 </section>
+{% endif %}
 
 {% endblock %}
 
