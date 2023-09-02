@@ -1,7 +1,11 @@
 from django.urls import path
 from .views import (
     browse, buy, item, home, portfolio, settings,
-    watchlist, trending
+    watchlist, trending, login, sign_up
+)
+from .views.redirects import (
+    add_to_watchlist, logout, pages,
+    item_type_filter, metric_filter, winners_losers_filter
 )
 
 urlpatterns = [
@@ -13,4 +17,12 @@ urlpatterns = [
     path('settings/', settings.settings, name='settings'),
     path('watchlist/', watchlist.watchlist, name='watchlist'),
     path('trending/', trending.trending, name='trending'),
+    path('add_to_watchlist/<str:item_id>/', add_to_watchlist.add_to_watchlist, name='add_to_watchlist'),
+    path('pages/<str:redirect_view>/', pages.pages, name='pages'),
+    path('item_type_filter/<str:redirect_view>/', item_type_filter.item_type_filter, name='item_type_filter'),
+    path('metric_filter/<str:redirect_view>/', metric_filter.metric_filter, name='metric_filter'),
+    path('winners_losers_filter/<str:redirect_view>/', winners_losers_filter.winners_losers_filter, name='winners_losers_filter'),
+    path('login/', login.login, name='login'),
+    path('sign_up/', sign_up.sign_up, name='sign_up'),
+    path('logout/', logout.logout, name='logout')
 ]
