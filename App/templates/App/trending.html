@@ -1,5 +1,71 @@
 {% extends 'App/blocks/base.html' %}
 
 {% block content %}
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+{% load tags %}
+{% load static %}
+
+{{ trending_items|json_script:"trending-items"}}
+
+<script>
+    var trending_items = JSON.parse(document.getElementById('trending-items').textContent)
+</script>
+
+<style>
+    canvas {
+        height: 16rem;
+        width: 28rem;
+    }
+
+    .trending-item-container:last-child {
+        border: unset;
+    }
+
+    .trending-item-container:hover {
+        background-color: whitesmoke;
+    }
+</style>
+
+<section id="trending" class="d-flex mt-3">
+    <section id="items-and-options" class="w-50">
+        {% include 'App/blocks/pages.html' with redirect_view='trending' pages=pages %}
+        {% include 'App/blocks/filters.html' with redirect_view='trending' %}
+        <div id="trending-items-container" class="overflow-scroll mt-2" style="max-height: 60vh;">
+            {% for item in trending_items %}    
+            <div onclick="update_focus_item(this)" class="trending-item border-bottom ps-3 trending-item-container d-flex d-flex flex-column" style="height: 6rem;">
+                <span class="d-none trending-item-index">{{forloop.counter0}}</span>
+                <span class="item-name">{{item.item_name}}</span>
+                <a href="{% url 'item' item.item_id %}" class="item-id" style="width: max-content;">{{item.item_id}}</a>
+                <span 
+                {% if item.metric_change < 0 %} 
+                    style="color: red;" 
+                {% else %} 
+                    style="color: green;" 
+                {% endif %}
+                >{% if 'avg_price' in metrics.0 %} £ {% endif %} {{item.metric_change|abs}}</span>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+
+    <section id="focus-item" class="w-50 border-start">
+        <div id="top-content" class="my-3">
+            <div id="title" class="d-flex flex-column ms-3 bg-secondaryx">
+                <span class="item-name h4">{{trending_items.0.item_name}}</span>
+                <a class="item-id mb-3" href="{% url 'item' trending_items.0.item_id %}">{{trending_items.0.item_id}}</a>
+            </div>
+            <div id="metrics-and-img-container" class="d-flex justify-content-evenly">
+                <img style="max-height: 9rem; max-width: 14rem;" src="{% static 'App/items/' %}{{trending_items.0.item_id}}.png" class="item-image w-auto h-auto d-block">
+                <div id="metrics" class="mb-5 d-flex flex-column justify-content-center">
+                    <span id="avg-price-new">Average Price (New) : £{{trending_items.0.avg_price_new}}</span>
+                    <span id="avg-price-used">Average Price (Used) : £{{trending_items.0.avg_price_used}}</span>
+                    <span id="total-quantity-new">Total Quantity (New) : {{trending_items.0.total_quantity_new}}</span>
+                    <span id="total-quantity-used">Total Quantity (Used) : {{trending_items.0.total_quantity_used}}</span>
+                </div>
+            </div>
+        </div>
+        {% include 'App/blocks/graph.html' with item_info=trending_items.0 metrics=metrics current_page=current_page %}
+    </section>
+</section>
 
 {% endblock %}
