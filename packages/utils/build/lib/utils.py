@@ -25,24 +25,49 @@ def item_type_convert(item_type:str):
 def timer(func):
     def inner(*args, **kwargs):
         start_time = time.time()
-        func(*args, **kwargs)
+        result = func(*args, **kwargs)
         finish_time = time.time() - start_time
-        print(f'<{func.__name__}> Finished in {round(finish_time)} seconds.')
+        print(f'<{func.__name__}> Finished in {round(finish_time, 6)} seconds.')
+        return result
     return inner
     
-    
+@timer
 def get_similar_items(item_name:str, item_type:str):
-    single_words = item_name.split(' ')
-    single_words = [word for word in single_words if len(word) > 2 and word not in SimilarItem.COMMON_WORDS]
+    item_name_words = item_name.split(' ')
+    item_name_words = [
+        word for word in item_name_words 
+        if len(word) > 2 and 
+        word not in SimilarItem.COMMON_WORDS
+    ]
 
-    items = db.get_items_by_type(item_type, item_name, 'item_name', 'item_id')
+    items = db.get_items_by_type(item_type, item_name, select_fields=('item_name', 'item_id'))
+
+    len_item_name_words = len(item_name_words)
+    
+    shorten_max_combinations = {
+        len_item_name_words >= 14 : 6,
+        len_item_name_words < 14 and len_item_name_words >= 8: 5,
+        len_item_name_words < 8 and len_item_name_words >= 6: 4,
+        len_item_name_words < 6: len_item_name_words 
+    }
+    num_combinations = shorten_max_combinations[True]
+
     matches = []
-    for i in range(len(single_words)):
+    for i in range(len(item_name_words)):
         for item in items:
-            for sub in itertools.combinations(single_words, len(single_words) - i):
-                criteria = [True if s in item['item_name'] else False for s in sub]
-                if all(criteria) and item['item_id'] not in matches:
+            for sub in itertools.combinations(item_name_words, num_combinations - i):
+                if item['item_id'] in matches:
+                    continue
+
+                all_substrings_present = True
+                for s in sub:
+                    if s not in item['item_name']:
+                        all_substrings_present = False
+                        break
+
+                if all_substrings_present:
                     matches.append(item['item_id'])
-                    if len(matches) >= 12:
+                    if len(matches) >= SimilarItem.MAX_MATHCES:
                         return matches
-    return reversed(matches)
+                    break
+    return matches
