@@ -15,6 +15,11 @@ class DB:
             if type(v) == str:
                 data[k] = v.replace("'", '')
 
+    def format_select_fields(self, select_fields:tuple):
+        return ''.join(
+            [c for c in str(select_fields) if c not in ["'", '(', ')']]
+        )
+
     def select(self, sql,  select_fields=None, flat=None, fetchone=None, format=None):
         self.cursor.execute(sql)
         result = self.cursor.fetchall()
@@ -81,38 +86,45 @@ class DB:
     
 
     def get_items_by_type(self, item_type:str, item_id:str, select_fields:tuple):
-        select_fields_formated = ''.join([c for c in str(select_fields) if c not in ["'", '(', ')']])
         sql = f'''
-        SELECT {select_fields_formated}
+        SELECT {self.format_select_fields(select_fields)}
         FROM "App_item"
         WHERE item_type = '{item_type}'
             AND item_id != '{item_id}'
         '''
         return self.select(sql, select_fields, format=True)
     
-    def get_trending_items(self):
+    def get_trending_items(self, condition, metric, select_fields):
+        if 'avg_price' in metric:
+            type_cast = 'decimal'
+            decimal_places = '2'
+        else:
+            type_cast = 'integer'
+            decimal_places = '0'
+
         sql = f'''
         with dates as (
             select item_id, min(date) as min_date, max(date) as max_date
             from "App_price" Price_inner
-            where Price_inner.condition = 'N'
+            where Price_inner.condition = '{condition}'
             group by item_id
         )
-        select item_id, round((
+        select I.item_id, item_type, round((
             (
-                select avg_price
-                from "App_price" Price_min	
-                where Price_min.item_id = dates.item_id
-                    and Price_min.condition = 'N'
-                    and date = dates.min_date
-            ) - (
-                select avg_price
+                select {metric}
                 from "App_price" Price_max	
                 where Price_max.item_id = dates.item_id
-                    and Price_max.condition = 'N'
+                    and Price_max.condition = '{condition}'
                     and date = dates.max_date
-            )
-        )::decimal,2) as price_change
-        from dates
+            ) - (
+                select {metric}
+                from "App_price" Price_min	
+                where Price_min.item_id = dates.item_id
+                    and Price_min.condition = '{condition}'
+                    and date = dates.min_date
+            ) 
+        )::{type_cast},{decimal_places}) as metric_change
+        from dates, "App_item" I
+        where dates.item_id = I.item_id
         '''
-        return self.select(sql)
+        return self.select(sql, select_fields, format=True)
