@@ -51,7 +51,7 @@ def trending(request:WSGIRequest):
     ]
 
     graph_metric = metric + '_' + {'N': 'new', 'U': 'used'}[condition]
-    graph_date_range = int(request.session.get('graph_range', 99999))
+    selected_date_range = int(request.session.get('graph_range', 99999))
 
     for item in trending_items:
         
@@ -72,21 +72,25 @@ def trending(request:WSGIRequest):
             item_id=item['item_id'], condition='U'
         ).latest('date').total_quantity
 
-        graph_data = GraphData(Price, item['item_id'], date_range=graph_date_range)
+        graph_data = GraphData(Price, item['item_id'], date_range=selected_date_range)
         item.update(graph_data.get_metrics())
         item['graph_dates'] = graph_data.get_dates()
 
         oldest_metric_occurance = item['graph_' + graph_metric][0]
-        newest_metric_occurance = item['graph_' + graph_metric][-1]
-        item['metric_percentage_change'] = round(
-            (oldest_metric_occurance - newest_metric_occurance) / oldest_metric_occurance * -100
-        ,2)
+        if oldest_metric_occurance != 0:
+            newest_metric_occurance = item['graph_' + graph_metric][-1]
+            item['metric_percentage_change'] = round(
+                (oldest_metric_occurance - newest_metric_occurance) / oldest_metric_occurance * -100
+            ,2)
+        else:
+            item['metric_percentage_change'] = 100
 
     context = {
         'trending_items':trending_items,
         'metrics':[graph_metric],
         'pages':pages,
-        'current_page':current_page
+        'current_page':current_page,
+        'selected_date_range':selected_date_range
     }
 
     return render(request, 'App/trending.html', context=context)

@@ -27,9 +27,16 @@
 </style>
 
 <section id="trending" class="d-flex mt-3">
-    <section id="items-and-options" class="w-50">
+    <section id="items-and-options" class="w-50 pe-2">
         {% include 'App/blocks/pages.html' with redirect_view='trending' pages=pages %}
-        {% include 'App/blocks/filters.html' with redirect_view='trending' %}
+        <div class="mt-3 d-flex justify-content-center">
+            {% include 'App/blocks/graph_range.html' with redirect_view='trending' selected_date_range=selected_date_range %}
+        </div>
+
+        <div class="border-bottom py-2 mt-3 border-3 border-top ">
+            {% include 'App/blocks/filters.html' with redirect_view='trending' %}
+        </div>
+
         <div id="trending-items-container" class="overflow-scroll mt-2" style="max-height: 60vh;">
             {% for item in trending_items %}    
             <div onclick="update_focus_item(this)" class="trending-item border-bottom ps-3 trending-item-container d-flex d-flex flex-column" style="height: 6rem;">
@@ -42,7 +49,9 @@
                 {% else %} 
                     style="color: green;" 
                 {% endif %}
-                >{% if 'avg_price' in metrics.0 %} £ {% endif %} {{item.metric_change|abs}}</span>
+                >{% if 'avg_price' in metrics.0 %} £ {% endif %} {{item.metric_change|abs}} 
+                ({{item.metric_percentage_change|zero_pad_float}}%)
+                </span>
             </div>
             {% endfor %}
         </div>
