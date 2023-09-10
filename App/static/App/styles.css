@@ -23,3 +23,11 @@
 ::-webkit-scrollbar {
     display: none;
 }
+
+.item-container:last-child {
+    border: unset !important;
+}
+
+.item-container:hover {
+    background-color: whitesmoke;
+}
