@@ -1,6 +1,7 @@
 from django.db import models
 from config import ModelValidations as MV
 from utils import clean_html_codes
+from django.utils import timezone
 
 class User(models.Model):
     user_id = models.AutoField(primary_key=True)
@@ -18,11 +19,11 @@ class Portfolio(models.Model):
     entry_id = models.AutoField(primary_key=True)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     item = models.ForeignKey(Item, on_delete=models.CASCADE)
-    date_added = models.DateField()
-    date_bought = models.DateField
-    date_sold = models.DateField()
-    bought_for = models.FloatField()
-    sold_for = models.FloatField()
+    date_added = models.DateField(default=timezone.now)
+    date_bought = models.DateField(null=True, blank=True)
+    date_sold = models.DateField(null=True, blank=True)
+    bought_for = models.FloatField(null=True, blank=True, default=0)
+    sold_for = models.FloatField(null=True, blank=True, default=0)
     notes = models.CharField(max_length=MV.Lengths.NOTES)
     condition = models.CharField(max_length=MV.Lengths.CONDITION, choices=(MV.Choices.CONDITION))
 
