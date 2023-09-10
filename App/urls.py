@@ -1,7 +1,7 @@
 from django.urls import path
 from .views import (
     browse, buy, item, home, portfolio, settings,
-    watchlist, trending, login, sign_up
+    watchlist, trending, login, sign_up, portfolio_item
 )
 from .views.redirects import (
     add_to_watchlist, logout, pages,
@@ -15,6 +15,7 @@ urlpatterns = [
     path('buy/', buy.buy, name='buy'),
     path('item/<str:item_id>', item.item, name='item'),
     path('portfolio/', portfolio.portfolio, name='portfolio'),
+    path('portfolio/<str:item_id>/', portfolio_item.portfolio_item, name='portfolio_item'),
     path('settings/', settings.settings, name='settings'),
     path('watchlist/', watchlist.watchlist, name='watchlist'),
     path('trending/', trending.trending, name='trending'),
