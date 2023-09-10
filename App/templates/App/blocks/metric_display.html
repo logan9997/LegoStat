@@ -1,0 +1,8 @@
+{% load tags %}
+<div id="prices-and-quantities" class="d-flex flex-column text-center">
+    <h4>Price & Quantity</h4>
+    <span>Price (New) : £{{item_info.avg_price_new|zero_pad_float}}</span>
+    <span>Price (Used) : £{{item_info.avg_price_used|zero_pad_float}}</span>
+    <span>Quantity (New) : {{item_info.total_quantity_new}}</span>
+    <span>Quantity (Used) : {{item_info.total_quantity_used}}</span>
+</div>
