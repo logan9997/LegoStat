@@ -147,6 +147,6 @@ function update_focus_item(item) {
 }
 
 function show_submit_button(item) {
-    button = item.parentNode.parentNode.parentNode.getElementsByTagName('button')[0]
-    console.log(button)
+    let submit_button = item.getElementsByTagName('button')[0]
+    submit_button.classList.remove('invisible')
 }
