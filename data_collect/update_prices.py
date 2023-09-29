@@ -1,6 +1,7 @@
 from responses import Response
 from db import DB
-from utils import item_type_convert, timer
+from utils import item_type_convert
+from global_utils import timer
 
 class Update:
 

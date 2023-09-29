@@ -5,7 +5,7 @@ from django.core.handlers.wsgi import WSGIRequest
 from utils import GraphData
 
 
-def portfolio(request:WSGIRequest):
+def portfolio(request: WSGIRequest):
 
     user_id = request.session.get('user_id', -1)
 

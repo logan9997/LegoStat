@@ -8,7 +8,9 @@ def login(request):
         if form.is_valid():
             user = User.objects.filter(**form.cleaned_data)
             if len(user) == 1:
-                request.session['user_id'] = user.values_list('user_id', flat=True)[0]
+                request.session['user_id'] = user.values_list(
+                    'user_id', flat=True
+                )[0]
                 return redirect('home')
             
     context = {

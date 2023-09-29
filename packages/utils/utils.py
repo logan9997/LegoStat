@@ -3,6 +3,7 @@ from config import SimilarItem, Pages
 from db import DB
 import itertools
 from datetime import date, timedelta
+from global_utils import timer
 
 db = DB()
 
@@ -19,44 +20,40 @@ def clean_html_codes(string:str):
 
 def item_type_convert(item_type:str):
     if len(item_type) > 1:
-        return {'MINIFIG':'M', 'SET':'S'}[item_type]
-    return {'M':'MINIFIG', 'S':'SET'}[item_type]
+        return {'MINIFIG':'M', 'SET':'S'}.get(item_type)
+    return {'M':'MINIFIG', 'S':'SET'}.get(item_type)
 
+def condition_covert(condition:str):
+    if len(condition) > 1:
+        return {'used': 'U', 'new': 'N'}.get(condition)
+    return {'U':'used', 'N':'new'}.get(condition)
 
-def timer(func):
-    def inner(*args, **kwargs):
-        start_time = time.time()
-        result = func(*args, **kwargs)
-        finish_time = time.time() - start_time
-        print(f'<{func.__name__}> Finished in {round(finish_time, 6)} seconds.')
-        return result
-    return inner
     
 @timer
 def get_similar_items(item_name:str, item_type:str, item_id:str):
-    item_name_words = item_name.split(' ')
-    item_name_words = [
-        word for word in item_name_words 
+    item_name_split = item_name.split(' ')
+    item_name_split = [
+        word for word in item_name_split 
         if len(word) > 2 and 
         word not in SimilarItem.COMMON_WORDS
     ]
 
     items = db.get_items_by_type(item_type, item_id, select_fields=('item_name', 'item_id'))
 
-    len_item_name_words = len(item_name_words)
+    len_item_name_split = len(item_name_split)
     
     shorten_max_combinations = {
-        len_item_name_words >= 14 : 6,
-        len_item_name_words < 14 and len_item_name_words >= 8: 5,
-        len_item_name_words < 8 and len_item_name_words >= 6: 4,
-        len_item_name_words < 6: len_item_name_words 
+        len_item_name_split >= 14 : 6,
+        len_item_name_split < 14 and len_item_name_split >= 8: 5,
+        len_item_name_split < 8 and len_item_name_split >= 6: 4,
+        len_item_name_split < 6: len_item_name_split 
     }
-    num_combinations = shorten_max_combinations[True]
+    num_combinations = shorten_max_combinations.get(True)
 
     matches = []
-    for i in range(len(item_name_words)):
+    for i in range(len(item_name_split)):
         for item in items:
-            for sub in itertools.combinations(item_name_words, num_combinations - i):
+            for sub in itertools.combinations(item_name_split, num_combinations - i):
                 if item['item_id'] in matches:
                     continue
 
@@ -124,9 +121,7 @@ def condence_pages(pages:list[int], current_page:int) -> list[int]:
 
     c = 0
     while True:
-
         c += 1
-        
         if current_page + c < len_pages:
             new_pages.append(current_page + c)
         if current_page - c > 0:
@@ -134,7 +129,6 @@ def condence_pages(pages:list[int], current_page:int) -> list[int]:
 
         if len(new_pages) > Pages.MAX_PAGES - 2 or c >= len_pages // 2:
             break
-
 
     new_pages.insert(0, 1)
     if len_pages not in new_pages:
