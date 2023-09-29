@@ -30,3 +30,7 @@
 .item-container:hover {
     background-color: whitesmoke;
 }
+
+textarea {
+    resize: none;
+}
