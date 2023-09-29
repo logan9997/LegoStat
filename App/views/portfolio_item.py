@@ -1,8 +1,11 @@
 from django.shortcuts import render
+from django.core.handlers.wsgi import WSGIRequest
+
 from ..models import Price, Item, Portfolio
+from config import ModelValidations as MV, Options
+from utils import GraphData
 
-
-def portfolio_item(request, item_id: str):
+def portfolio_item(request:WSGIRequest, item_id: str):
 
     user_id = request.session.get('user_id', -1)
 
@@ -25,9 +28,15 @@ def portfolio_item(request, item_id: str):
         'quantity_owned_used': quantity_owned_used
     })
 
+    graph_data = GraphData(Price, item_info['item_id'])
+    item_info.update(graph_data.get_metrics())
+    item_info.update({'graph_dates':graph_data.get_dates()})
+
     context = {
         'item_info': item_info,
-        'items': portfolio_items.values()
+        'items': portfolio_items.values(),
+        'notes_max_length': MV.Lengths.NOTES,
+        'graph_metrics':Options.GRAPH_METRICS
     }
 
     return render(request, 'App/portfolio_item.html', context=context)
