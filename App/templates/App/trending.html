@@ -13,13 +13,6 @@
         width: 28rem;
     }
 
-    .trending-item-container:last-child {
-        border: unset;
-    }
-
-    .trending-item-container:hover {
-        background-color: whitesmoke;
-    }
 </style>
 
 <section id="trending" class="d-flex mt-3">
@@ -35,7 +28,7 @@
 
         <div id="trending-items-container" class="overflow-scroll mt-2" style="max-height: 60vh;">
             {% for item in trending_items %}    
-            <div onclick="update_focus_item(this)" class="trending-item border-bottom ps-3 trending-item-container d-flex d-flex flex-column" style="height: 6rem;">
+            <div onclick="update_focus_item(this)" class="trending-item border-bottom ps-3 item-container d-flex d-flex flex-column" style="height: 6rem;">
                 <span class="d-none item-index">{{forloop.counter0}}</span>
                 <span class="item-name">{{item.item_name}}</span>
                 <a href="{% url 'item' item.item_id %}" class="item-id" style="width: max-content;">{{item.item_id}}</a>

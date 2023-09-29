@@ -100,6 +100,9 @@ function update_graph_date() {
 }
 
 function update_focus_item(item) {
+    // define 'items' with json_script in template
+    var items = JSON.parse(document.getElementById('items').textContent)
+
     var new_id = item.getElementsByClassName('item-id')[0].innerHTML    
     var new_name = item.getElementsByClassName('item-name')[0].innerHTML
 
@@ -109,24 +112,41 @@ function update_focus_item(item) {
     focus_item_container.getElementsByClassName('item-image')[0].src = `/static/App/items/${new_id}.png`
 
     var item_index = parseInt(
-        item.getElementsByClassName('trending-item-index')[0].innerHTML
+        item.getElementsByClassName('item-index')[0].innerHTML
     )
 
     document.getElementById('avg-price-new').innerHTML = `
-        Average Price (New) : £${trending_items[item_index].avg_price_new}
+        Average Price (New) : £${items[item_index].avg_price_new}
     `
     document.getElementById('avg-price-used').innerHTML = `
-        Average Price (Used) : £${trending_items[item_index].avg_price_used}
+        Average Price (Used) : £${items[item_index].avg_price_used}
     `
     document.getElementById('total-quantity-new').innerHTML = `
-        Total Quantity (New) :  ${trending_items[item_index].total_quantity_new}
+        Total Quantity (New) :  ${items[item_index].total_quantity_new}
     `
     document.getElementById('total-quantity-used').innerHTML = `
-        Total Quantity (Used) : ${trending_items[item_index].total_quantity_used}
+        Total Quantity (Used) : ${items[item_index].total_quantity_used}
     `
 
-    var metric = JSON.parse(document.getElementById('graph-metrics').textContent)[0]   
-    graph.data.datasets[0].data = trending_items[item_index][`graph_${metric}`]
-    graph.data.labels = trending_items[item_index].graph_dates
+    // trending view only shows one metric on the items graph, whereas
+    // other views show all metrics
+    if (window.location.href.includes('trending')) {
+        var metric = JSON.parse(document.getElementById('graph-metrics').textContent)[0]   
+        graph.data.datasets[0].data = items[item_index][`graph_${metric}`]
+    } else {
+        all_metrics = [
+            'avg_price_new', 'avg_price_used', 
+            'total_quantity_new', 'total_quantity_used'
+        ]
+        for (let i = 0; i < 4; i ++) {
+            graph.data.datasets[i].data = items[item_index][`graph_${all_metrics[i]}`]
+        }
+    }
+    graph.data.labels = items[item_index].graph_dates
     graph.update()
+}
+
+function show_submit_button(item) {
+    button = item.parentNode.parentNode.parentNode.getElementsByTagName('button')[0]
+    console.log(button)
 }

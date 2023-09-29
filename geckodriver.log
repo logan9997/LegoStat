@@ -1,0 +1,1184 @@
+1691243900218	geckodriver	INFO	Listening on 127.0.0.1:61864
+1691243903318	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "61865" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\logan\\AppData\\Local\\Temp\\rust_mozprofileJV8kfI"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1691243903724	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1691243903806	Marionette	INFO	Listening on port 61877
+WebDriver BiDi listening on ws://127.0.0.1:61865
+Read port: 61877
+1691243904041	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:61865/devtools/browser/2c197769-2dbb-42ba-b42d-b26901f2ce0f
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+1691244094045	geckodriver	INFO	Listening on 127.0.0.1:61965
+1691244097094	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "61966" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\logan\\AppData\\Local\\Temp\\rust_mozprofileoWEH8M"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1691244097475	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1691244097544	Marionette	INFO	Listening on port 61974
+WebDriver BiDi listening on ws://127.0.0.1:61966
+Read port: 61974
+1691244097741	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:61966/devtools/browser/6bdfcfe3-0975-454b-9df6-80db897a8c40
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+1691244111798	Marionette	INFO	Stopped listening on port 61974
+Dynamically enable window occlusion 1
+1691244168383	geckodriver	INFO	Listening on 127.0.0.1:62031
+1691244171462	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "62032" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\logan\\AppData\\Local\\Temp\\rust_mozprofileEt4WJ1"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1691244171766	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1691244171837	Marionette	INFO	Listening on port 62040
+WebDriver BiDi listening on ws://127.0.0.1:62032
+Read port: 62040
+1691244172029	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:62032/devtools/browser/2892ad81-b874-451b-a906-52a2bb0d2765
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+SourceActor threw an exception: Error: Failed to fetch https://cache.bricklink.info/vendor/jquery.scrollTo.min.js. Code 2153390067.
+Stack: onResponse@resource://devtools/shared/DevToolsUtils.js:600:16
+onStopRequest@resource://gre/modules/NetUtil.sys.mjs:124:18
+Line: 600, column: 16
+console.error: (new Error("Failed to fetch https://cache.bricklink.info/vendor/jquery.scrollTo.min.js. Code 2153390067.", "resource://devtools/shared/DevToolsUtils.js", 600))
+SourceActor threw an exception: Error: Failed to fetch https://cache.bricklink.info/vendor/tinysort.min.js. Code 2153390067.
+Stack: onResponse@resource://devtools/shared/DevToolsUtils.js:600:16
+onStopRequest@resource://gre/modules/NetUtil.sys.mjs:124:18
+Line: 600, column: 16
+console.error: (new Error("Failed to fetch https://cache.bricklink.info/vendor/tinysort.min.js. Code 2153390067.", "resource://devtools/shared/DevToolsUtils.js", 600))
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 600: Error: Failed to fetch https://cache.bricklink.info/vendor/jquery.scrollTo.min.js. Code 2153390067.
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 600: Error: Failed to fetch https://cache.bricklink.info/vendor/tinysort.min.js. Code 2153390067.
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 575: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1691244202050	Marionette	INFO	Stopped listening on port 62040
+Dynamically enable window occlusion 1
+console.error: "DEPRECATION WARNING: Calling FileUtils.getDir(..., ..., true) causes main thread I/O and should be avoided especially during startup/shutdown\nYou may find more details about this deprecation at: https://bugzilla.mozilla.org/show_bug.cgi?id=921157\nresource://gre/modules/FileUtils.sys.mjs 62 FileUtils_getDir\nresource://gre/modules/UpdateService.sys.mjs 1054 getUpdateDirCreate\nresource://gre/modules/UpdateService.sys.mjs 1093 getUpdateFile\nresource://gre/modules/UpdateService.sys.mjs 4428 UM__loadXMLFileIntoArray\nresource://gre/modules/UpdateService.sys.mjs 4262 UpdateManager\nresource://gre/modules/XPCOMUtils.sys.mjs 137 defineLazyServiceGetter/<\nresource://gre/modules/UpdateService.sys.mjs 3362 get _pingSuffix\nresource://gre/modules/UpdateService.sys.mjs 3405 AUS__checkForBackgroundUpdates\nresource://gre/modules/UpdateService.sys.mjs 3350 AUS_notify\nresource://gre/modules/UpdateTimerManager.sys.mjs 199 TM_notify/</<\n"
+console.error: "DEPRECATION WARNING: Calling FileUtils.getDir(..., ..., true) causes main thread I/O and should be avoided especially during startup/shutdown\nYou may find more details about this deprecation at: https://bugzilla.mozilla.org/show_bug.cgi?id=921157\nresource://gre/modules/FileUtils.sys.mjs 62 FileUtils_getDir\nresource://gre/modules/UpdateService.sys.mjs 1054 getUpdateDirCreate\nresource://gre/modules/UpdateService.sys.mjs 1093 getUpdateFile\nresource://gre/modules/UpdateService.sys.mjs 771 getCanApplyUpdates\nresource://gre/modules/UpdateService.sys.mjs 3413 AUS__checkForBackgroundUpdates\nresource://gre/modules/UpdateService.sys.mjs 3350 AUS_notify\nresource://gre/modules/UpdateTimerManager.sys.mjs 199 TM_notify/</<\n"
+1691244202109	addons.xpi	ERROR	System addon update list error Error: Failed downloading XML, status: 0, channelStatus: null, errorCode: 5, reason: error
+1691244271263	geckodriver	INFO	Listening on 127.0.0.1:62199
+1691244274310	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "62200" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\logan\\AppData\\Local\\Temp\\rust_mozprofileySJn2a"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1691244274712	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1691244274820	Marionette	INFO	Listening on port 62207
+WebDriver BiDi listening on ws://127.0.0.1:62200
+Read port: 62207
+1691244275093	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:62200/devtools/browser/c438d8b0-720b-40af-a922-9749819fea2b
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+console.warn: "Listener for event 'frame' did not return a promise."
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 575: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 575: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1691244472887	Marionette	INFO	Stopped listening on port 62207
+Dynamically enable window occlusion 1
+.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1691244439099	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1691244439170	Marionette	INFO	Listening on port 62330
+WebDriver BiDi listening on ws://127.0.0.1:62323
+Read port: 62330
+1691244439237	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:62323/devtools/browser/d777cd8d-32f2-454d-98ef-da15e120c32c
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+1691244471756	Marionette	INFO	Stopped listening on port 62330
+Dynamically enable window occlusion 1
+console.error: (new Error("IndexedDB: main/doh-config list() IndexedDB:  execute() The application is shutting down", "resource://services-settings/IDBHelpers.jsm", 18))
+console.error: (new Error("IndexedDB: main/devtools-devices getLastModified() IndexedDB:  execute() The application is shutting down", "resource://services-settings/IDBHelpers.jsm", 18))
+ow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1691244460512	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1691244460604	Marionette	INFO	Listening on port 62395
+WebDriver BiDi listening on ws://127.0.0.1:62387
+Read port: 62395
+1691244460915	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:62387/devtools/browser/b861a784-1b6a-4177-9caa-bdf43acd048d
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+1691244470242	Marionette	INFO	Stopped listening on port 62395
+Dynamically enable window occlusion 1
+1691244544400	geckodriver	INFO	Listening on 127.0.0.1:62450
+1691244547439	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "62451" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\logan\\AppData\\Local\\Temp\\rust_mozprofilerZo13r"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1691244547825	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1691244547899	Marionette	INFO	Listening on port 62458
+WebDriver BiDi listening on ws://127.0.0.1:62451
+Read port: 62458
+1691244548109	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:62451/devtools/browser/e06accba-fa56-4ecc-9d50-ed7e52917412
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+1691244580372	geckodriver	INFO	Listening on 127.0.0.1:62512
+1691244583426	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "62513" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\logan\\AppData\\Local\\Temp\\rust_mozprofileluxAGt"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1691244583769	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1691244583851	Marionette	INFO	Listening on port 62521
+WebDriver BiDi listening on ws://127.0.0.1:62513
+Read port: 62521
+1691244584035	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:62513/devtools/browser/79e9f5a7-3535-47dd-af60-8014fec2de9c
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+1691244640995	geckodriver	INFO	Listening on 127.0.0.1:62565
+1691244644066	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "62566" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\logan\\AppData\\Local\\Temp\\rust_mozprofileAlTNMi"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1691244644369	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1691244644440	Marionette	INFO	Listening on port 62573
+WebDriver BiDi listening on ws://127.0.0.1:62566
+Read port: 62573
+1691244644638	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:62566/devtools/browser/3089b121-b055-4365-8be3-843fa78c33fc
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+1691244672378	geckodriver	INFO	Listening on 127.0.0.1:62628
+1691244675439	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "62629" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\logan\\AppData\\Local\\Temp\\rust_mozprofileh6FcU9"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1691244675741	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1691244675812	Marionette	INFO	Listening on port 62636
+WebDriver BiDi listening on ws://127.0.0.1:62629
+Read port: 62636
+1691244676012	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:62629/devtools/browser/676339ad-2374-49db-a265-7bd04e8efd8a
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+1691244695307	Marionette	INFO	Stopped listening on port 62636
+Dynamically enable window occlusion 1
+1691244777282	geckodriver	INFO	Listening on 127.0.0.1:62680
+1691244780360	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "62681" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\logan\\AppData\\Local\\Temp\\rust_mozprofilek52QZL"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1691244780673	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1691244780749	Marionette	INFO	Listening on port 62688
+WebDriver BiDi listening on ws://127.0.0.1:62681
+Read port: 62688
+1691244780958	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:62681/devtools/browser/aaf3c726-622c-48ee-be5f-988c61f76863
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+1691244828688	Marionette	INFO	Stopped listening on port 62688
+Dynamically enable window occlusion 1
+1691244908383	geckodriver	INFO	Listening on 127.0.0.1:62753
+1691244911473	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "62754" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\logan\\AppData\\Local\\Temp\\rust_mozprofileOZZQye"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1691244911831	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1691244911902	Marionette	INFO	Listening on port 62761
+WebDriver BiDi listening on ws://127.0.0.1:62754
+Read port: 62761
+1691244912086	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:62754/devtools/browser/90790d2a-e331-4014-8b2a-a33e48b7f2d0
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+1691245123402	Marionette	INFO	Stopped listening on port 62761
+Dynamically enable window occlusion 1
+ng command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "62818" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\logan\\AppData\\Local\\Temp\\rust_mozprofileSHdMBo"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1691244945599	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1691244945705	Marionette	INFO	Listening on port 62829
+WebDriver BiDi listening on ws://127.0.0.1:62818
+Read port: 62829
+1691244945961	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:62818/devtools/browser/91303898-828d-40b4-b41d-87e4a84d693c
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+1691245122909	Marionette	INFO	Stopped listening on port 62829
+Dynamically enable window occlusion 1
+ng command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "62882" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\logan\\AppData\\Local\\Temp\\rust_mozprofilej8ch3V"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1691244990603	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1691244990677	Marionette	INFO	Listening on port 62889
+WebDriver BiDi listening on ws://127.0.0.1:62882
+Read port: 62889
+1691244990874	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:62882/devtools/browser/e3dbe6fa-4e89-464d-8865-90c125ae2f0f
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+1691245122419	Marionette	INFO	Stopped listening on port 62889
+Dynamically enable window occlusion 1
+ng command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "62957" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\logan\\AppData\\Local\\Temp\\rust_mozprofileGBP92r"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1691245025553	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1691245025657	Marionette	INFO	Listening on port 62965
+WebDriver BiDi listening on ws://127.0.0.1:62957
+Read port: 62965
+1691245025890	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:62957/devtools/browser/66ab75f6-179a-4339-a7b5-df4b9187716e
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+1691245122469	Marionette	INFO	Stopped listening on port 62965
+Dynamically enable window occlusion 1
+ng command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "63026" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\logan\\AppData\\Local\\Temp\\rust_mozprofile6H20Ia"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1691245055874	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1691245055945	Marionette	INFO	Listening on port 63036
+WebDriver BiDi listening on ws://127.0.0.1:63026
+Read port: 63036
+1691245056165	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:63026/devtools/browser/2e80307c-d314-4ff1-8372-48d4b38484a1
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+1691245121771	Marionette	INFO	Stopped listening on port 63036
+Dynamically enable window occlusion 1
+ng command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "63095" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\logan\\AppData\\Local\\Temp\\rust_mozprofilegcGFIv"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1691245086815	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1691245086895	Marionette	INFO	Listening on port 63107
+WebDriver BiDi listening on ws://127.0.0.1:63095
+Read port: 63107
+1691245087100	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:63095/devtools/browser/9991a444-5aba-40f2-a5e8-20ce4dae60d4
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+1691245121521	Marionette	INFO	Stopped listening on port 63107
+Dynamically enable window occlusion 1
+ng command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "63156" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\logan\\AppData\\Local\\Temp\\rust_mozprofilefJgnlp"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1691245108350	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1691245108429	Marionette	INFO	Listening on port 63163
+WebDriver BiDi listening on ws://127.0.0.1:63156
+Read port: 63163
+1691245108634	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:63156/devtools/browser/1887c58f-8beb-45fb-96e7-1ed833259d5c
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+1691245120946	Marionette	INFO	Stopped listening on port 63163
+Dynamically enable window occlusion 1
+1691245145953	geckodriver	INFO	Listening on 127.0.0.1:63211
+1691245149013	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "63212" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\logan\\AppData\\Local\\Temp\\rust_mozprofile1PLV79"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1691245149390	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1691245149460	Marionette	INFO	Listening on port 63219
+WebDriver BiDi listening on ws://127.0.0.1:63212
+Read port: 63219
+1691245149659	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:63212/devtools/browser/60a813d6-294f-4f39-84c4-67f33d22a513
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+1691245167165	geckodriver	INFO	Listening on 127.0.0.1:63282
+1691245170220	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "63283" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\logan\\AppData\\Local\\Temp\\rust_mozprofileHM0vSq"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1691245170524	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1691245170596	Marionette	INFO	Listening on port 63290
+WebDriver BiDi listening on ws://127.0.0.1:63283
+Read port: 63290
+1691245170794	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:63283/devtools/browser/3cf8c172-be11-45b8-93e4-817ef6e331af
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+1691247448197	Marionette	INFO	Stopped listening on port 63290
+Dynamically enable window occlusion 1
+ng command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "63362" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\logan\\AppData\\Local\\Temp\\rust_mozprofile4CNSUP"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1691245262020	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1691245262091	Marionette	INFO	Listening on port 63369
+WebDriver BiDi listening on ws://127.0.0.1:63362
+Read port: 63369
+1691245262287	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:63362/devtools/browser/6586e3da-bd42-4ffd-9392-ffa54316c1d9
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+1691247447044	Marionette	INFO	Stopped listening on port 63369
+Dynamically enable window occlusion 1
+ng command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "63441" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\logan\\AppData\\Local\\Temp\\rust_mozprofileSrmK5o"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1691245300827	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1691245300913	Marionette	INFO	Listening on port 63448
+WebDriver BiDi listening on ws://127.0.0.1:63441
+Read port: 63448
+1691245301147	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:63441/devtools/browser/2aa06ff1-30e2-4a68-8bea-c196fe48dc31
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+1691247426251	Marionette	INFO	Stopped listening on port 63448
+Dynamically enable window occlusion 1
+1691247497237	geckodriver	INFO	Listening on 127.0.0.1:63626
+1691247500280	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "63627" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\logan\\AppData\\Local\\Temp\\rust_mozprofilehPHiRF"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1691247500649	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1691247500719	Marionette	INFO	Listening on port 63634
+WebDriver BiDi listening on ws://127.0.0.1:63627
+Read port: 63634
+1691247500863	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:63627/devtools/browser/37e420cc-e258-414a-bb73-43e06840a7e9
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+1691247553506	Marionette	INFO	Stopped listening on port 63634
+Dynamically enable window occlusion 1
+ng command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "63676" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\logan\\AppData\\Local\\Temp\\rust_mozprofilevQAAH7"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1691247524029	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1691247524111	Marionette	INFO	Listening on port 63684
+WebDriver BiDi listening on ws://127.0.0.1:63676
+Read port: 63684
+1691247524337	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:63676/devtools/browser/cb5f2c83-75d6-40ba-85ed-a6cadfab8c41
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+1691247552763	Marionette	INFO	Stopped listening on port 63684
+Dynamically enable window occlusion 1
+1691247819924	geckodriver	INFO	Listening on 127.0.0.1:63776
+1691247822974	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "63777" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\logan\\AppData\\Local\\Temp\\rust_mozprofileiq8Z6E"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1691247823274	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1691247823342	Marionette	INFO	Listening on port 63784
+WebDriver BiDi listening on ws://127.0.0.1:63777
+Read port: 63784
+1691247823544	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:63777/devtools/browser/e25e5470-c4e8-4e13-883b-54ebf4055847
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+1691247833598	Marionette	INFO	Stopped listening on port 63784
+Dynamically enable window occlusion 1
+1691247888522	geckodriver	INFO	Listening on 127.0.0.1:63844
+1691247891567	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "63845" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\logan\\AppData\\Local\\Temp\\rust_mozprofilesJrLqS"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1691247891879	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1691247891949	Marionette	INFO	Listening on port 63852
+WebDriver BiDi listening on ws://127.0.0.1:63845
+Read port: 63852
+1691247892151	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:63845/devtools/browser/b188f264-30ce-49a7-986f-fb22c5f8a26b
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript error: resource://gre/actors/ContentMetaChild.sys.mjs, line 179: InvalidStateError: JSWindowActorChild.sendAsyncMessage: JSWindowActorChild cannot send at the moment
+1691247910131	Marionette	INFO	Stopped listening on port 63852
+Dynamically enable window occlusion 1
+1691247936514	geckodriver	INFO	Listening on 127.0.0.1:63952
+1691247939598	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "63953" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\logan\\AppData\\Local\\Temp\\rust_mozprofilemyW2Cr"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1691247939901	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1691247939972	Marionette	INFO	Listening on port 63960
+WebDriver BiDi listening on ws://127.0.0.1:63953
+Read port: 63960
+1691247940167	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:63953/devtools/browser/229e30ae-4876-44d7-bf90-3cbf3c5ec43d
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+1691249293577	geckodriver	INFO	Listening on 127.0.0.1:64370
+1691249296648	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "64371" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\logan\\AppData\\Local\\Temp\\rust_mozprofileSwvYq6"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1691249297046	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1691249297134	Marionette	INFO	Listening on port 64378
+WebDriver BiDi listening on ws://127.0.0.1:64371
+Read port: 64378
+1691249297350	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:64371/devtools/browser/f64ebefe-ad4a-4f01-9ecc-0b0c4f26e80d
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+1691249318818	geckodriver	INFO	Listening on 127.0.0.1:64434
+1691249321889	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "64435" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\logan\\AppData\\Local\\Temp\\rust_mozprofileScIP9L"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1691249322204	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1691249322273	Marionette	INFO	Listening on port 64442
+WebDriver BiDi listening on ws://127.0.0.1:64435
+Read port: 64442
+1691249322470	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:64435/devtools/browser/5ea41451-7ce7-4c83-a6b7-fa6e4cc28873
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+1691249349511	geckodriver	INFO	Listening on 127.0.0.1:64486
+1691249352600	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "64487" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\logan\\AppData\\Local\\Temp\\rust_mozprofiles0Lb9V"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1691249352906	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1691249352976	Marionette	INFO	Listening on port 64495
+WebDriver BiDi listening on ws://127.0.0.1:64487
+Read port: 64495
+1691249353168	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:64487/devtools/browser/4687cf4b-5309-4f84-ae6b-f32f14b82091
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+1691250095096	Marionette	INFO	Stopped listening on port 64495
+Dynamically enable window occlusion 1
+1691254595655	geckodriver	INFO	Listening on 127.0.0.1:55084
+1691262526048	geckodriver	INFO	Listening on 127.0.0.1:55896
+1691262529116	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "55897" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\logan\\AppData\\Local\\Temp\\rust_mozprofileewaoHt"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1691262529539	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1691262529631	Marionette	INFO	Listening on port 55905
+WebDriver BiDi listening on ws://127.0.0.1:55897
+Read port: 55905
+1691262529856	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:55897/devtools/browser/22acb317-4652-4233-b449-d6a474a5fc62
+1691262624779	Marionette	INFO	Stopped listening on port 55905
+Dynamically enable window occlusion 1
+1691315476409	geckodriver	INFO	Listening on 127.0.0.1:51091
+1691315479475	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51092" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\logan\\AppData\\Local\\Temp\\rust_mozprofileD041vB"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1691315479870	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1691315479949	Marionette	INFO	Listening on port 51100
+WebDriver BiDi listening on ws://127.0.0.1:51092
+Read port: 51100
+1691315480162	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:51092/devtools/browser/3cc3464e-fa0c-4047-bb92-850e03bf4497
+1691315489153	Marionette	INFO	Stopped listening on port 51100
+Dynamically enable window occlusion 1
+1691315531364	geckodriver	INFO	Listening on 127.0.0.1:51131
+1691315534392	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51132" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\logan\\AppData\\Local\\Temp\\rust_mozprofilezpEg7M"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1691315534692	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1691315534762	Marionette	INFO	Listening on port 51140
+WebDriver BiDi listening on ws://127.0.0.1:51132
+Read port: 51140
+1691315534946	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:51132/devtools/browser/6ed223c0-158b-4d5e-a3f1-f6154d9980b4
+1691315558464	Marionette	INFO	Stopped listening on port 51140
+Dynamically enable window occlusion 1
+ng command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51170" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\logan\\AppData\\Local\\Temp\\rust_mozprofilevztGCq"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1691315552495	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1691315552565	Marionette	INFO	Listening on port 51177
+WebDriver BiDi listening on ws://127.0.0.1:51170
+Read port: 51177
+1691315552758	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:51170/devtools/browser/8fdb616c-6d44-4644-88a6-a1f7424f26d5
+1691315557851	Marionette	INFO	Stopped listening on port 51177
+Dynamically enable window occlusion 1
+1691315667209	geckodriver	INFO	Listening on 127.0.0.1:51238
+1691315705876	geckodriver	INFO	Listening on 127.0.0.1:51248
+1691315708938	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51249" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\logan\\AppData\\Local\\Temp\\rust_mozprofilenk1DJ1"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1691315709240	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1691315709308	Marionette	INFO	Listening on port 51256
+WebDriver BiDi listening on ws://127.0.0.1:51249
+Read port: 51256
+1691315709496	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:51249/devtools/browser/42bc4951-0682-4a26-b423-3e6bec558aa9
+1691315763401	geckodriver	INFO	Listening on 127.0.0.1:51294
+1691315766449	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51295" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\logan\\AppData\\Local\\Temp\\rust_mozprofilen7rU03"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1691315766746	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1691315766818	Marionette	INFO	Listening on port 51303
+WebDriver BiDi listening on ws://127.0.0.1:51295
+Read port: 51303
+1691315767015	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:51295/devtools/browser/3d91ae2a-e489-44b7-963d-8daadb2d193a
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+1691315835621	geckodriver	INFO	Listening on 127.0.0.1:51382
+1691315838673	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51383" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\logan\\AppData\\Local\\Temp\\rust_mozprofilelh1y9h"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1691315839025	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1691315839093	Marionette	INFO	Listening on port 51390
+WebDriver BiDi listening on ws://127.0.0.1:51383
+Read port: 51390
+1691315839271	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:51383/devtools/browser/3a53dc28-9ed6-49f3-ac6b-0e2565ab21fe
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+1691315884659	geckodriver	INFO	Listening on 127.0.0.1:51475
+1691315887672	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51476" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\logan\\AppData\\Local\\Temp\\rust_mozprofileMWzO0Q"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1691315888008	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1691315888080	Marionette	INFO	Listening on port 51485
+WebDriver BiDi listening on ws://127.0.0.1:51476
+Read port: 51485
+1691315888284	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:51476/devtools/browser/5adb85c8-7ddd-4b52-adbf-a59598a199f6
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+1691316032383	geckodriver	INFO	Listening on 127.0.0.1:51574
+1691316035437	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51575" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\logan\\AppData\\Local\\Temp\\rust_mozprofile7n3W3H"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1691316035793	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1691316035861	Marionette	INFO	Listening on port 51582
+WebDriver BiDi listening on ws://127.0.0.1:51575
+Read port: 51582
+1691316036038	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:51575/devtools/browser/b789e5a2-ecf4-460d-b438-87af360f101c
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+1691316115155	geckodriver	INFO	Listening on 127.0.0.1:51647
+1691316118220	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51648" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\logan\\AppData\\Local\\Temp\\rust_mozprofileZNeJH6"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1691316118516	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1691316118586	Marionette	INFO	Listening on port 51656
+WebDriver BiDi listening on ws://127.0.0.1:51648
+Read port: 51656
+1691316118772	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:51648/devtools/browser/c40686fb-6ff2-4af9-a72d-d0ffdacd4167
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+1691316148007	geckodriver	INFO	Listening on 127.0.0.1:51715
+1691316151042	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51716" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\logan\\AppData\\Local\\Temp\\rust_mozprofileBEiTuz"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1691316151354	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1691316151423	Marionette	INFO	Listening on port 51730
+WebDriver BiDi listening on ws://127.0.0.1:51716
+Read port: 51730
+1691316151618	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:51716/devtools/browser/bbd88cfa-0c7e-44c7-8961-0e4f34259df6
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+1691316181278	geckodriver	INFO	Listening on 127.0.0.1:51781
+1691316184326	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51782" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\logan\\AppData\\Local\\Temp\\rust_mozprofiley0IVuh"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1691316184643	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1691316184710	Marionette	INFO	Listening on port 51789
+WebDriver BiDi listening on ws://127.0.0.1:51782
+Read port: 51789
+1691316184895	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:51782/devtools/browser/fc510b6a-0a62-47d8-a6cc-dad5f734b3b9
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+1691316431974	Marionette	INFO	Stopped listening on port 51789
+Dynamically enable window occlusion 1
+ng command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51911" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\logan\\AppData\\Local\\Temp\\rust_mozprofileKYr72M"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1691316401208	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1691316401279	Marionette	INFO	Listening on port 51918
+WebDriver BiDi listening on ws://127.0.0.1:51911
+Read port: 51918
+1691316401465	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:51911/devtools/browser/af7bed4e-a40b-450c-a0d0-a6c00f88eda4
+1691316431606	Marionette	INFO	Stopped listening on port 51918
+Dynamically enable window occlusion 1
+console.error: "DEPRECATION WARNING: Calling FileUtils.getDir(..., ..., true) causes main thread I/O and should be avoided especially during startup/shutdown\nYou may find more details about this deprecation at: https://bugzilla.mozilla.org/show_bug.cgi?id=921157\nresource://gre/modules/FileUtils.sys.mjs 62 FileUtils_getDir\nresource://gre/modules/UpdateService.sys.mjs 1054 getUpdateDirCreate\nresource://gre/modules/UpdateService.sys.mjs 1093 getUpdateFile\nresource://gre/modules/UpdateService.sys.mjs 4428 UM__loadXMLFileIntoArray\nresource://gre/modules/UpdateService.sys.mjs 4262 UpdateManager\nresource://gre/modules/XPCOMUtils.sys.mjs 137 defineLazyServiceGetter/<\nresource://gre/modules/UpdateService.sys.mjs 3362 get _pingSuffix\nresource://gre/modules/UpdateService.sys.mjs 3405 AUS__checkForBackgroundUpdates\nresource://gre/modules/UpdateService.sys.mjs 3350 AUS_notify\nresource://gre/modules/UpdateTimerManager.sys.mjs 199 TM_notify/</<\n"
+console.error: "DEPRECATION WARNING: Calling FileUtils.getDir(..., ..., true) causes main thread I/O and should be avoided especially during startup/shutdown\nYou may find more details about this deprecation at: https://bugzilla.mozilla.org/show_bug.cgi?id=921157\nresource://gre/modules/FileUtils.sys.mjs 62 FileUtils_getDir\nresource://gre/modules/UpdateService.sys.mjs 1054 getUpdateDirCreate\nresource://gre/modules/UpdateService.sys.mjs 1093 getUpdateFile\nresource://gre/modules/UpdateService.sys.mjs 771 getCanApplyUpdates\nresource://gre/modules/UpdateService.sys.mjs 3413 AUS__checkForBackgroundUpdates\nresource://gre/modules/UpdateService.sys.mjs 3350 AUS_notify\nresource://gre/modules/UpdateTimerManager.sys.mjs 199 TM_notify/</<\n"
+1691316431661	addons.xpi	ERROR	System addon update list error Error: Failed downloading XML, status: 0, channelStatus: 2147500036, errorCode: 2, reason: error
+console.error: (new Error("Polling for changes failed: NetworkError: Network request failed.", "resource://services-settings/remote-settings.sys.mjs", 324))
+1691316463477	geckodriver	INFO	Listening on 127.0.0.1:51967
+1691316466532	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51968" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\logan\\AppData\\Local\\Temp\\rust_mozprofilej0ilrf"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1691316466889	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1691316466968	Marionette	INFO	Listening on port 51975
+WebDriver BiDi listening on ws://127.0.0.1:51968
+Read port: 51975
+1691316467133	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:51968/devtools/browser/e0fdecf1-c0ee-4bdf-b797-2a3ab2e84648
+1691316493981	Marionette	INFO	Stopped listening on port 51975
+Dynamically enable window occlusion 1
+1691316544760	geckodriver	INFO	Listening on 127.0.0.1:52223
+1691316547841	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52224" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\logan\\AppData\\Local\\Temp\\rust_mozprofileCwE0SW"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1691316548148	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1691316548219	Marionette	INFO	Listening on port 52231
+WebDriver BiDi listening on ws://127.0.0.1:52224
+Read port: 52231
+1691316548414	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:52224/devtools/browser/8bab1676-7537-4d71-a7f2-193f5c323ad9
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+1691316785259	Marionette	INFO	Stopped listening on port 52231
+Dynamically enable window occlusion 1
+1691608042260	geckodriver	INFO	Listening on 127.0.0.1:51413
+1691608045392	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51414" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\logan\\AppData\\Local\\Temp\\rust_mozprofileQrYOUq"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1691608045808	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1691608045894	Marionette	INFO	Listening on port 51422
+WebDriver BiDi listening on ws://127.0.0.1:51414
+Read port: 51422
+1691608046116	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:51414/devtools/browser/d031374d-fcd8-4e8e-b51c-0bea792df900
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+[Parent 568, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 17248, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+1691608079598	geckodriver	INFO	Listening on 127.0.0.1:51472
+1691608082675	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51473" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\logan\\AppData\\Local\\Temp\\rust_mozprofile4JwPaM"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1691608082994	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1691608083068	Marionette	INFO	Listening on port 51481
+WebDriver BiDi listening on ws://127.0.0.1:51473
+Read port: 51481
+1691608083317	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:51473/devtools/browser/6b11e835-45fe-476d-ae50-9179b2b54f0b
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+[Parent 18112, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 7776, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+1691608118565	geckodriver	INFO	Listening on 127.0.0.1:51545
+1691608121603	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51546" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\logan\\AppData\\Local\\Temp\\rust_mozprofileSxnglD"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1691608121937	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1691608122010	Marionette	INFO	Listening on port 51554
+WebDriver BiDi listening on ws://127.0.0.1:51546
+Read port: 51554
+1691608122224	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:51546/devtools/browser/faf7ee61-b66b-432c-ac10-9f78930ae21c
+[Parent 7680, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 15784, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+1691608369056	geckodriver	INFO	Listening on 127.0.0.1:51631
+1691608372119	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51632" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\logan\\AppData\\Local\\Temp\\rust_mozprofileSZcC65"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1691608372444	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1691608372514	Marionette	INFO	Listening on port 51639
+WebDriver BiDi listening on ws://127.0.0.1:51632
+Read port: 51639
+1691608372698	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:51632/devtools/browser/84d8dc21-d175-45b0-8a58-dd28f9b9b371
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+[Parent 14716, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 3852, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+1691608400330	geckodriver	INFO	Listening on 127.0.0.1:51703
+1691608403395	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51704" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\logan\\AppData\\Local\\Temp\\rust_mozprofile0qKivD"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1691608403777	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1691608403845	Marionette	INFO	Listening on port 51715
+WebDriver BiDi listening on ws://127.0.0.1:51704
+Read port: 51715
+1691608404040	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:51704/devtools/browser/7b90025a-9b86-469b-973b-74fcef285250
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+[Parent 9512, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 2276, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+JavaScript warning: https://connect.facebook.net/en_US/fbevents.js, line 24: Script terminated by timeout at:
+value@https://connect.facebook.net/en_US/fbevents.js:24:7808
+@https://connect.facebook.net/en_US/fbevents.js:24:63835
+
+1691608429248	Marionette	INFO	Stopped listening on port 51715
+Dynamically enable window occlusion 1
+[Parent 9512, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 2276, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 9512, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 2276, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 9512, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 2276, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 9512, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 2276, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 9512, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 2276, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+1691608455981	geckodriver	INFO	Listening on 127.0.0.1:51768
+1691608459044	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51769" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\logan\\AppData\\Local\\Temp\\rust_mozprofilehYehje"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1691608459341	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1691608459410	Marionette	INFO	Listening on port 51776
+WebDriver BiDi listening on ws://127.0.0.1:51769
+Read port: 51776
+1691608459595	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:51769/devtools/browser/c052da58-580b-4ecf-a4b8-4e65df915930
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+[Parent 11332, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 6548, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+1691608504219	Marionette	INFO	Stopped listening on port 51776
+Dynamically enable window occlusion 1
+[Parent 11332, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 6548, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 11332, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 6548, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 11332, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 6548, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 11332, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 6548, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+1691608536642	geckodriver	INFO	Listening on 127.0.0.1:51858
+1691608539709	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51859" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\logan\\AppData\\Local\\Temp\\rust_mozprofile2jlC5g"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1691608540095	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1691608540184	Marionette	INFO	Listening on port 51867
+WebDriver BiDi listening on ws://127.0.0.1:51859
+Read port: 51867
+1691608540429	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:51859/devtools/browser/1668f620-d012-4b98-a1c4-caf376abe6c3
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+[Parent 13892, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 18788, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript error: resource://gre/actors/ContentMetaChild.sys.mjs, line 179: InvalidStateError: JSWindowActorChild.sendAsyncMessage: JSWindowActorChild cannot send at the moment
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+1691608582675	geckodriver	INFO	Listening on 127.0.0.1:51954
+1691608585738	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51955" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\logan\\AppData\\Local\\Temp\\rust_mozprofileug5Fns"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1691608586049	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1691608586123	Marionette	INFO	Listening on port 51962
+WebDriver BiDi listening on ws://127.0.0.1:51955
+Read port: 51962
+1691608586315	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:51955/devtools/browser/e3957e4e-1548-4f7e-948e-0b8e5671f92d
+[Parent 14032, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 6136, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+1691608616167	Marionette	INFO	Stopped listening on port 51962
+Dynamically enable window occlusion 1
+[Parent 14032, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 6136, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 14032, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 6136, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+1691608616239	addons.xpi	ERROR	System addon update list error Error: Failed downloading XML, status: 0, channelStatus: 2147500036, errorCode: 2, reason: error
+console.error: (new Error("Polling for changes failed: NetworkError: Network request failed.", "resource://services-settings/remote-settings.sys.mjs", 324))
+[Parent 14032, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 6136, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 14032, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 6136, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 14032, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 6136, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+1691608663934	geckodriver	INFO	Listening on 127.0.0.1:52040
+1691608667006	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52041" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\logan\\AppData\\Local\\Temp\\rust_mozprofilewdNEwV"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1691608667316	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1691608667384	Marionette	INFO	Listening on port 52048
+WebDriver BiDi listening on ws://127.0.0.1:52041
+Read port: 52048
+1691608667572	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:52041/devtools/browser/be10ccbf-7729-4095-92c1-79f3aabd7ddd
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+[Parent 17076, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 14020, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+1691608719594	geckodriver	INFO	Listening on 127.0.0.1:52128
+1691608722645	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52129" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\logan\\AppData\\Local\\Temp\\rust_mozprofile0sprTJ"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1691608722946	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1691608723014	Marionette	INFO	Listening on port 52136
+WebDriver BiDi listening on ws://127.0.0.1:52129
+Read port: 52136
+1691608723200	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:52129/devtools/browser/081a7356-649f-4c2a-ae31-8d022264c607
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+[Parent 19196, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 15480, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+1691608781145	geckodriver	INFO	Listening on 127.0.0.1:52254
+1691608784198	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52255" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\logan\\AppData\\Local\\Temp\\rust_mozprofileP9YguW"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1691608784500	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1691608784569	Marionette	INFO	Listening on port 52263
+WebDriver BiDi listening on ws://127.0.0.1:52255
+Read port: 52263
+1691608784758	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:52255/devtools/browser/6bddc6bb-37ae-4e8b-984f-350c48a85019
+[Parent 14252, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 8784, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+1691608826609	geckodriver	INFO	Listening on 127.0.0.1:52332
+1691608829677	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52333" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\logan\\AppData\\Local\\Temp\\rust_mozprofileuFj2YC"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1691608829982	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1691608830051	Marionette	INFO	Listening on port 52340
+WebDriver BiDi listening on ws://127.0.0.1:52333
+Read port: 52340
+1691608830241	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:52333/devtools/browser/ddf606d9-3a80-4e4f-88a9-7ab8c1347f6c
+[Parent 10332, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 1992, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 34: unreachable code after return statement
+JavaScript warning: https://static.bricklink.com/_cache/jsaspcommon.65e4473bf388d3bb1d77c7ac874f5cba.js, line 25: unreachable code after return statement
+1691609026637	Marionette	INFO	Stopped listening on port 52340
+Dynamically enable window occlusion 1
+[Parent 10332, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 1992, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 10332, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 1992, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 10332, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 1992, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 10332, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 1992, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 10332, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 1992, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443

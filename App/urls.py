@@ -6,7 +6,7 @@ from .views import (
 from .views.redirects import (
     add_to_watchlist, logout, pages,
     item_type_filter, metric_filter, winners_losers_filter,
-    graph_range
+    graph_range, update_portfolio_item
 )
 
 urlpatterns = [
@@ -16,6 +16,7 @@ urlpatterns = [
     path('item/<str:item_id>', item.item, name='item'),
     path('portfolio/', portfolio.portfolio, name='portfolio'),
     path('portfolio/<str:item_id>/', portfolio_item.portfolio_item, name='portfolio_item'),
+    path('update_portfolio_item/<str:item_id>', update_portfolio_item.update_portfolio_item, name='update_portfolio_item'),
     path('settings/', settings.settings, name='settings'),
     path('watchlist/', watchlist.watchlist, name='watchlist'),
     path('trending/', trending.trending, name='trending'),

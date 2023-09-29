@@ -1,0 +1,22 @@
+{% load static %}
+
+<section id="focus-item">
+    <div id="top-content" class="my-3">
+        <div id="title" class="d-flex flex-column ms-3">
+            <span class="item-name h4">{{item.item_name}}</span>
+            <a class="item-id mb-3" href="{% url 'item' item.item_id %}">{{item.item_id}}</a>
+        </div>
+        <div id="metrics-and-img-container" class="d-flex justify-content-evenly">
+            <img style="max-height: 9rem; max-width: 14rem;"
+                src="{% static 'App/items/' %}{{item.item_id}}.png"
+                class="item-image w-auto h-auto d-block">
+            <div id="metrics" class="mb-5 d-flex flex-column justify-content-center">
+                <span id="avg-price-new">Average Price (New) : £{{item.avg_price_new}}</span>
+                <span id="avg-price-used">Average Price (Used) : £{{item.avg_price_used}}</span>
+                <span id="total-quantity-new">Total Quantity (New) : {{item.total_quantity_new}}</span>
+                <span id="total-quantity-used">Total Quantity (Used) : {{item.total_quantity_used}}</span>
+            </div>
+        </div>
+    </div>
+    {% include 'App/blocks/graph.html' with item_info=item metrics=metrics %}
+</section>

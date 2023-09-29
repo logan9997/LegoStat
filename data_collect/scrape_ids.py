@@ -3,6 +3,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.remote.webelement import WebElement
 from responses import Response
 from db import DB
+from utils import item_type_convert
 
 class Scraper:
 
@@ -37,7 +38,7 @@ class Scraper:
                 continue
             self.c += 1
             print(self.c, item_id)
-            info = self.get_item_data(item_id)['data']
+            info = self.get_item_data(item_id)
             self.insert_to_database(info)
 
     def next_page(self):
@@ -47,14 +48,15 @@ class Scraper:
         self.url = self.url.replace(f'pg={current_page}', f'pg={next_page}')
 
     def get_item_data(self, item_id:str):
-        info = self.responses.get_response(f'items/MINIFIG/{item_id}')
+        info = self.responses.get_response(f'items/SET/{item_id}')
         return info
     
     def insert_to_database(self, info:dict):
+        info['type'] = item_type_convert(info['type'])
         self.db.insert_item(info)
 
         
-scraper = Scraper(f'https://www.bricklink.com/catalogList.asp?pg=1&catString=65&catType=M')
+scraper = Scraper(f'https://www.bricklink.com/catalogList.asp?pg=1&catType=S&catString=65')
 scraper.get_url()
 scraper.accept_cookies()
 while True:

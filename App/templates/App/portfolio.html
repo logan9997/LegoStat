@@ -1,5 +1,50 @@
 {% extends 'App/blocks/base.html' %}
+{% load static %}
+{% load tags %}
 
 {% block content %}
+<style>
+    .border {
+        border: unset;
+    }
 
+</style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+{{ portfolio_items|json_script:"items"}}
+
+<section id="main" class="d-flex" style="height: 90vh;">
+    <section id="left-panel" class="h-100 border-end" style="width: 35%;">
+        <!-- <h2 class="text-center">Items</h2> -->
+        <div class="overflow-scroll h-100">
+            {% for item in portfolio_items %}
+            <div onclick="update_focus_item(this)" class="item-container position-relative border-bottom d-flex justify-content-between" style="height: 7rem;">
+                <span class="d-none item-index">{{forloop.counter0}}</span>
+                <div style="min-width: 20%" class="d-flex flex-column justify-content-center">
+                    <img src="{% static 'App/items/' %}{{item.item_id}}.png" class="item-image d-block mx-auto" style="max-width: 5rem;">
+                </div>
+
+                <div style="width: 80%;" class="d-flex flex-column justify-content-center ms-3">
+                    <span class="item-name text-max-two-lines">{{item.item_name}}</span>
+                    <a class="item-id" href="{% url 'item' item.item_id %}" style="width: fit-content;">{{item.item_id}}</a>
+                    <div class="d-flex justify-content-between flex-wrap" style="width: 20rem;">
+                        <span>Condition : ({{item.condition}})</span>
+                        <span>Qty : {{item.quantity}}</span>
+                        <span>Total Value : £{{item.total_value|zero_pad_float}}</span>
+                    </div>
+                </div>
+
+                <div style="width: 10%;" class="justify-content-end d-flex item-options end-0 me-3 position-absolute">
+                    <a href="{% url 'portfolio_item' item.item_id %}">...</a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+
+    <section id="right-panel" class="w-50 h-100 ms-3">
+        <!-- <h2 class="text-center">Item</h2> -->  
+        {% include 'App/blocks/focus_item.html' with item=portfolio_items.0 %}
+    </section>
+</section>
 {% endblock %}

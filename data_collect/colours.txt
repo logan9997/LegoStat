@@ -1,0 +1,160 @@
+1 			White 	 14831 	 10954 	 21371 	 14998 	 1949 - 2023 
+49 			Very Light Gray 	 21 	 24 	 1317 	 60 	 1997 - 2004 
+99 			Very Light Bluish Gray 	 53 	 49 	 1771 	 101 	 2004 - 2013 
+86 			Light Bluish Gray 	 4636 	 7291 	 8420 	 5170 	 2003 - 2023 
+9 			Light Gray 	 1866 	 3202 	 5536 	 2474 	 1954 - 2008 
+10 			Dark Gray 	 1061 	 1705 	 4003 	 1481 	 1961 - 2006 
+85 			Dark Bluish Gray 	 4033 	 6697 	 7764 	 4493 	 2003 - 2023 
+11 			Black 	 12214 	 12705 	 17036 	 12495 	 1957 - 2023 
+59 			Dark Red 	 1715 	 1908 	 3964 	 1808 	 1961 - 2023 
+5 			Red 	 7934 	 10704 	 12105 	 8335 	 1949 - 2023 
+220 			Coral 	 208 	 347 	 654 	 211 	 2019 - 2023 
+231 			Dark Salmon 	 5 	 4 	 90 	 5 	 2003 - 2003 
+25 			Salmon 	 84 	 27 	 470 	 91 	 1997 - 1999 
+26 			Light Salmon 	 51 	 23 	 413 	 56 	 1997 - 2002 
+58 			Sand Red 	 39 	 18 	 457 	 48 	 2001 - 2004 
+120 			Dark Brown 	 777 	 1767 	 2831 	 828 	 2007 - 2023 
+8 			Brown 	 584 	 1096 	 3430 	 950 	 1974 - 2006 
+91 			Light Brown 	 40 	 28 	 1578 	 91 	 2002 - 2006 
+240 			Medium Brown 	 45 	 36 	 669 	 45 	 2022 - 2023 
+88 			Reddish Brown 	 2192 	 4523 	 4428 	 2438 	 2003 - 2023 
+106 			Fabuland Brown 	 7 	 26 	 1156 	 17 	 1979 - 1991 
+69 			Dark Tan 	 1152 	 2485 	 3106 	 1180 	 1961 - 2023 
+241 			Medium Tan 	 68 	 42 	 450 	 53 	 2022 - 2023 
+2 			Tan 	 2551 	 4978 	 5415 	 2748 	 1958 - 2023 
+90 			Light Nougat 	 1861 	 1782 	 3280 	 1860 	 2004 - 2023 
+28 			Nougat 	 305 	 338 	 1398 	 376 	 1979 - 2023 
+150 			Medium Nougat 	 1069 	 1713 	 2199 	 1113 	 2010 - 2023 
+225 			Dark Nougat 	 3 	 10 	 767 	 40 	 2001 - 2004 
+160 			Fabuland Orange 	 2 	 3 	 426 	 3 	 1983 - 1987 
+29 			Earth Orange 	 44 	 88 	 902 	 57 	 1982 - 2005 
+68 			Dark Orange 	 787 	 1815 	 2296 	 842 	 1994 - 2023 
+27 			Rust 	 13 	 26 	 1474 	 31 	 1979 - 2005 
+165 			Neon Orange 	  	  	 370 	 8 	 ? 
+4 			Orange 	 2143 	 3625 	 4157 	 2313 	 1993 - 2023 
+31 			Medium Orange 	 129 	 112 	 941 	 175 	 1950 - 2007 
+110 			Bright Light Orange 	 1214 	 1838 	 2744 	 1288 	 2003 - 2023 
+32 			Light Orange 	 18 	 18 	 458 	 59 	 1998 - 2004 
+96 			Very Light Orange 	 1 	 2 	 440 	 20 	 2000 - 2000 
+161 			Dark Yellow 	 5 	 5 	 646 	 20 	 2004 - 2005 
+3 			Yellow 	 6849 	 10464 	 10692 	 7798 	 1949 - 2023 
+33 			Light Yellow 	 102 	 70 	 1146 	 161 	 1994 - 2005 
+103 			Bright Light Yellow 	 514 	 951 	 2093 	 553 	 2004 - 2023 
+236 			Neon Yellow 	 124 	 75 	 344 	 122 	 2022 - 2023 
+166 			Neon Green 	  	  	 336 	 9 	 ? 
+35 			Light Lime 	 20 	 16 	 411 	 45 	 1992 - 2007 
+158 			Yellowish Green 	 228 	 347 	 571 	 245 	 2012 - 2023 
+76 			Medium Lime 	 67 	 42 	 537 	 79 	 1998 - 2005 
+248 			Fabuland Lime 	 9 	 5 	 194 	 9 	 1982 - 1986 
+34 			Lime 	 1774 	 2718 	 2909 	 1918 	 1993 - 2023 
+242 			Dark Olive Green 	  	  	 151 	 2 	 ? 
+155 			Olive Green 	 567 	 522 	 2062 	 612 	 2012 - 2023 
+80 			Dark Green 	 930 	 1114 	 3057 	 1008 	 1961 - 2023 
+6 			Green 	 2086 	 5436 	 4737 	 2391 	 1949 - 2023 
+36 			Bright Green 	 710 	 2107 	 2382 	 794 	 1950 - 2023 
+37 			Medium Green 	 123 	 105 	 684 	 139 	 1950 - 2004 
+38 			Light Green 	 64 	 57 	 563 	 116 	 1992 - 2005 
+48 			Sand Green 	 699 	 786 	 1922 	 735 	 1964 - 2023 
+39 			Dark Turquoise 	 708 	 869 	 1704 	 769 	 1998 - 2023 
+40 			Light Turquoise 	 59 	 40 	 717 	 78 	 1998 - 2004 
+41 			Aqua 	 82 	 60 	 1217 	 145 	 1998 - 2006 
+152 			Light Aqua 	 494 	 622 	 974 	 507 	 2011 - 2023 
+63 			Dark Blue 	 2316 	 2200 	 4419 	 2391 	 1961 - 2023 
+7 			Blue 	 4105 	 8426 	 7297 	 4527 	 1950 - 2023 
+153 			Dark Azure 	 793 	 1053 	 1894 	 829 	 2011 - 2023 
+247 			Little Robots Blue 	 2 	 2 	 23 	  	 2003 - 2004 
+72 			Maersk Blue 	 84 	 14 	 614 	 103 	 1974 - 2011 
+156 			Medium Azure 	 939 	 1562 	 1844 	 979 	 2012 - 2023 
+87 			Sky Blue 	 37 	 33 	 754 	 45 	 2003 - 2007 
+42 			Medium Blue 	 875 	 1170 	 2088 	 989 	 1949 - 2023 
+105 			Bright Light Blue 	 517 	 619 	 2189 	 558 	 2004 - 2023 
+62 			Light Blue 	 19 	 18 	 763 	 85 	 1950 - 2007 
+55 			Sand Blue 	 697 	 695 	 2025 	 749 	 2001 - 2023 
+109 			Dark Blue-Violet 	 9 	 7 	 969 	 17 	 2004 - 2006 
+43 			Violet 	 80 	 44 	 538 	 108 	 1992 - 2005 
+97 			Blue-Violet 	 38 	 19 	 828 	 59 	 2004 - 2005 
+245 			Lilac 	 6 	 6 	 194 	 6 	 2004 - 2005 
+73 			Medium Violet 	 15 	 19 	 379 	 16 	 1999 - 2004 
+246 			Light Lilac 	 1 	 1 	 21 	 1 	 2004 - 2004 
+44 			Light Violet 	 69 	 38 	 323 	 86 	 1994 - 2002 
+89 			Dark Purple 	 1031 	 1308 	 2208 	 1131 	 2003 - 2023 
+24 			Purple 	 134 	 125 	 1377 	 252 	 1997 - 2006 
+93 			Light Purple 	 26 	 19 	 595 	 55 	 2003 - 2006 
+157 			Medium Lavender 	 504 	 742 	 946 	 521 	 2012 - 2023 
+154 			Lavender 	 375 	 533 	 867 	 426 	 2011 - 2023 
+227 			Clikits Lavender 	 10 	 12 	 434 	 16 	 2005 - 2005 
+54 			Sand Purple 	 20 	 5 	 391 	 24 	 2001 - 2002 
+71 			Magenta 	 630 	 1062 	 1449 	 677 	 2000 - 2023 
+47 			Dark Pink 	 785 	 1332 	 1553 	 858 	 1994 - 2023 
+94 			Medium Dark Pink 	 14 	 6 	 407 	 48 	 1992 - 1993 
+104 			Bright Pink 	 638 	 1335 	 1604 	 691 	 2003 - 2023 
+23 			Pink 	 120 	 78 	 946 	 213 	 1991 - 2005 
+56 			Light Pink 	 1 	 1 	 482 	 55 	 2007 - 2007 
+Transparent Colors
+ ID  			Name  	 Parts  	 In Sets  	 Wanted  	 For Sale  	 Color Timeline 
+12 			Trans-Clear 	 1038 	 5224 	 2969 	 1266 	 1950 - 2023 
+13 			Trans-Brown (Old Trans-Black) 	 475 	 1820 	 1264 	 527 	 1999 - 2023 
+251 			Trans-Black (2023) 	 2 	 2 	 145 	 4 	 2023 - 2023 
+17 			Trans-Red 	 235 	 3826 	 1105 	 300 	 1969 - 2023 
+18 			Trans-Neon Orange 	 246 	 1036 	 818 	 317 	 1993 - 2022 
+98 			Trans-Orange 	 226 	 2124 	 741 	 296 	 2003 - 2023 
+164 			Trans-Light Orange 	 42 	 22 	 383 	 86 	 2003 - 2006 
+121 			Trans-Neon Yellow 	 28 	 37 	 426 	 71 	 2001 - 2006 
+19 			Trans-Yellow 	 228 	 2574 	 917 	 288 	 1969 - 2023 
+16 			Trans-Neon Green 	 237 	 1142 	 776 	 291 	 1990 - 2023 
+108 			Trans-Bright Green 	 174 	 534 	 672 	 210 	 2006 - 2023 
+221 			Trans-Light Green 	 10 	 5 	 178 	 19 	 2005 - 2006 
+226 			Trans-Light Bright Green 	 26 	 17 	 154 	 49 	 2003 - 2006 
+20 			Trans-Green 	 139 	 1504 	 639 	 191 	 1969 - 2023 
+14 			Trans-Dark Blue 	 269 	 1739 	 1099 	 336 	 1978 - 2023 
+74 			Trans-Medium Blue 	 98 	 204 	 956 	 151 	 2001 - 2018 
+15 			Trans-Light Blue 	 845 	 3043 	 1815 	 957 	 1985 - 2023 
+113 			Trans-Aqua 	 39 	 36 	 439 	 50 	 2003 - 2006 
+114 			Trans-Light Purple 	 20 	 20 	 203 	 29 	 2005 - 2006 
+234 			Trans-Medium Purple 	 37 	 35 	 97 	 39 	 2003 - 2006 
+51 			Trans-Purple 	 137 	 401 	 517 	 166 	 2000 - 2023 
+50 			Trans-Dark Pink 	 240 	 758 	 641 	 261 	 1999 - 2023 
+107 			Trans-Pink 	 68 	 44 	 291 	 85 	 2003 - 2006 
+Chrome Colors
+ ID  			Name  	 Parts  	 In Sets  	 Wanted  	 For Sale  	 Color Timeline 
+21 			Chrome Gold 	 51 	 290 	 1447 	 60 	 1989 - 2023 
+22 			Chrome Silver 	 104 	 561 	 2052 	 164 	 1966 - 2023 
+57 			Chrome Antique Brass 	 3 	 17 	 409 	 3 	 2001 - 2005 
+122 			Chrome Black 	 11 	 1 	 1002 	 16 	 2009 - 2009 
+52 			Chrome Blue 	 5 	 14 	 316 	 11 	 1998 - 2006 
+64 			Chrome Green 	 1 	 2 	 285 	 5 	 1999 - 1999 
+82 			Chrome Pink 	 1 	 10 	 201 	 6 	 2001 - 2007 
+Pearl Colors
+ ID  			Name  	 Parts  	 In Sets  	 Wanted  	 For Sale  	 Color Timeline 
+83 			Pearl White 	 3 	 5 	 400 	 15 	 2003 - 2006 
+119 			Pearl Very Light Gray 	 21 	 16 	 412 	 43 	 2002 - 2004 
+66 			Pearl Light Gray 	 502 	 764 	 1550 	 631 	 1993 - 2011 
+95 			Flat Silver 	 819 	 2792 	 2826 	 1096 	 2008 - 2023 
+239 			Bionicle Silver 	 6 	 3 	 187 	 8 	 2002 - 2002 
+77 			Pearl Dark Gray 	 739 	 1188 	 2665 	 823 	 2000 - 2023 
+244 			Pearl Black 	 4 	 8 	 748 	 7 	 2003 - 2006 
+61 			Pearl Light Gold 	 13 	 7 	 419 	 62 	 2000 - 2005 
+115 			Pearl Gold 	 1124 	 2433 	 2608 	 1226 	 2004 - 2023 
+235 			Reddish Gold 	 28 	 28 	 123 	 28 	 2003 - 2005 
+238 			Bionicle Gold 	 6 	 3 	 86 	 7 	 2002 - 2002 
+81 			Flat Dark Gold 	 50 	 47 	 805 	 148 	 2002 - 2006 
+249 			Reddish Copper 	 21 	 20 	 43 	 22 	 2017 - 2020 
+84 			Copper 	 11 	 23 	 804 	 50 	 2004 - 2008 
+237 			Bionicle Copper 	 2 	 1 	 39 	 2 	 2001 - 2001 
+78 			Pearl Sand Blue 	 45 	 25 	 360 	 47 	 2002 - 2009 
+243 			Pearl Sand Purple 	  	  	 16 	  	 ? 
+Satin Colors
+ ID  			Name  	 Parts  	 In Sets  	 Wanted  	 For Sale  	 Color Timeline 
+228 			Satin Trans-Clear 	 17 	 53 	 186 	 19 	 2020 - 2023 
+229 			Satin Trans-Brown 	 7 	 12 	 73 	 6 	 2020 - 2023 
+233 			Satin Trans-Bright Green 	 6 	 7 	 58 	 6 	 2021 - 2023 
+223 			Satin Trans-Light Blue 	 45 	 76 	 192 	 45 	 2020 - 2023 
+232 			Satin Trans-Dark Blue 	 10 	 19 	 128 	 11 	 2021 - 2023 
+230 			Satin Trans-Purple 	 17 	 15 	 72 	 17 	 2020 - 2023 
+224 			Satin Trans-Dark Pink 	 12 	 24 	 62 	 12 	 2020 - 2023 
+Metallic Colors
+ ID  			Name  	 Parts  	 In Sets  	 Wanted  	 For Sale  	 Color Timeline 
+67 			Metallic Silver 	 202 	 722 	 2152 	 267 	 1957 - 2023 
+70 			Metallic Green 	 31 	 9 	 397 	 37 	 2001 - 2003 
+65 			Metallic Gold 	 108 	 306 	 1139 	 187 	 1997 - 2023 
+250 			Metallic Copper 	 6 	 14 	 129 	 6 	 2007 - 2012 

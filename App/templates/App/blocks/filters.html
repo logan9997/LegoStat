@@ -10,7 +10,7 @@
     }
 </style>
 
-<section id="filter-forms-container" class="d-flex justify-content-evenly mt-3">
+<section id="filter-forms-container" class="d-flex justify-content-evenly">
     <form class="d-flex flex-column" action="{% url 'item_type_filter' redirect_view %}" method="post">
         {% csrf_token %}
         <span class="filter-heading">Item Type</span>

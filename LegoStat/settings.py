@@ -76,7 +76,7 @@ WSGI_APPLICATION = 'LegoStat.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-db_credentials = Manager().get_database_credentials()
+db_credentials = Manager().get_database_credentials('settings')
 db_credentials['ENGINE'] = 'django.db.backends.postgresql_psycopg2'
 DATABASES = {
     'default': db_credentials

@@ -11,22 +11,23 @@ def item(request:WSGIRequest, item_id:str):
 
     user_id = request.session.get('user_id', -1)
 
-    max_date = Price.objects.filter(item_id=item_id).aggregate(max_date=Max('date')).get('max_date')
+    max_date = Price.objects.filter(
+        item_id=item_id
+    ).aggregate(max_date=Max('date')).get('max_date')
 
     price_table_filters = {'item_id':item_id, 'date':max_date}
-
     item_info = Item.objects.filter(item_id=item_id, price__date=max_date).values(
             'item_id', 'item_name', 'year_released', 'item_type', 'views',
             'price__date', 'price__avg_price', 'price__total_quantity',
             'price__condition'
         ).annotate(
-        price_new=Price.objects.filter(**price_table_filters, condition='N'
+        avg_price_new=Price.objects.filter(**price_table_filters, condition='N'
             ).values_list('avg_price', flat=True),    
-        price_used=Price.objects.filter(**price_table_filters, condition='U'
+        avg_price_used=Price.objects.filter(**price_table_filters, condition='U'
             ).values_list('avg_price', flat=True),
-        quantity_new=Price.objects.filter(**price_table_filters, condition='N'
+        total_quantity_new=Price.objects.filter(**price_table_filters, condition='N'
             ).values_list('total_quantity', flat=True),
-        quantity_used=Price.objects.filter(**price_table_filters, condition='U'
+        total_quantity_used=Price.objects.filter(**price_table_filters, condition='U'
             ).values_list('total_quantity', flat=True),
         in_watchlist=Exists(Watchlist.objects.filter(
             user_id=user_id,item_id=item_id)),
@@ -40,12 +41,12 @@ def item(request:WSGIRequest, item_id:str):
         ),
         portfolio_value=F('portfolio_quantity') * (
             Case(
-                When(price__condition='N', then=F('price_new')),
+                When(price__condition='N', then=F('avg_price_new')),
                 default=Value(0),
                 output_field=FloatField()
             ) +
             Case(
-                When(price__condition='U', then=F('price_used')),
+                When(price__condition='U', then=F('avg_price_used')),
                 default=Value(0),
                 output_field=FloatField()
             )

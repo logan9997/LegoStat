@@ -1,7 +1,8 @@
 from django import template
 from ..models import Item
+from datetime import datetime
 from utils import clean_html_codes
-from config import Options
+from config import Options, Date
 
 register = template.Library()
 
@@ -43,3 +44,7 @@ def zero_pad_float(number:float):
         if len(parted_out[1]) <= 1:
             num = parted_out[0] + '.' + parted_out[1] + '0'
     return num
+
+@register.filter
+def format_date(date):
+    return date.strftime(Date.DATE_FORMAT)

@@ -1,8 +1,10 @@
-<form action="{% url 'graph_range' redirect_view %}" method="post">
+{% load tags %}
+{% get_graph_date_range_buttons as graph_date_range_buttons %}
+
+<form id="graph-range-form" action="{% url 'graph_range' redirect_view %}" method="post">
     {% csrf_token %}
-    <button type="submit" value="7" name="graph_range">1W</button>
-    <button type="submit" value="30" name="graph_range">1M</button>
-    <button type="submit" value="90" name="graph_range">3M</button>
-    <button type="submit" value="365" name="graph_range">1Y</button>
-    <button type="submit" value="99999" name="graph_range">MAX</button>
+    {% for button in graph_date_range_buttons %}
+    <button type="submit" value="{{button.value}}" name="graph_range" 
+    {% if button.value == selected_date_range %} class="bg-success" {% endif %}>{{button.label}}</button>
+    {% endfor %}
 </form>
