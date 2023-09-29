@@ -1,8 +1,10 @@
 from django.shortcuts import render, redirect
+from django.core.handlers.wsgi import WSGIRequest
+
 from ..forms import Login
 from ..models import User
 
-def login(request):
+def login(request:WSGIRequest):
     if request.method == 'POST':
         form = Login(request.POST)
         if form.is_valid():

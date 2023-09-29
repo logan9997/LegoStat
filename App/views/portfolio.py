@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from ..models import Portfolio, Price
-from django.db.models import F, Count, Sum, OuterRef
+from django.db.models import F, Count, OuterRef
 from django.core.handlers.wsgi import WSGIRequest
 from utils import GraphData
 

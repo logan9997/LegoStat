@@ -1,8 +1,10 @@
 from django.shortcuts import render, redirect
+from django.core.handlers.wsgi import WSGIRequest
+
 from ..forms import SignUp
 from ..models import User
 
-def sign_up(request):
+def sign_up(request:WSGIRequest):
 
     if request.method == 'POST':
         form = SignUp(request.POST)

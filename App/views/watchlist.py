@@ -1,6 +1,8 @@
 from django.shortcuts import render
+from django.core.handlers.wsgi import WSGIRequest
 
-def watchlist(request):
+
+def watchlist(request:WSGIRequest):
 
     context = {}
 
